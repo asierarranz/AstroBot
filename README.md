@@ -1,4 +1,4 @@
-    ```
+
     # Chatbot de Astrología
     
     Este bot de Telegram, llamado "Miralunas", utiliza el poder de la astrología para generar cartas astrales personalizadas y predicciones para sus usuarios. Construido con la biblioteca `python-telegram-bot` e integrado con la biblioteca `kerykeion` para astrología, este bot interactúa con los usuarios en una conversación para recopilar sus detalles de nacimiento y ubicación, generando un informe astrológico detallado.
