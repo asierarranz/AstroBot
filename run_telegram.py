@@ -196,7 +196,10 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 def main() -> None:
     application = Application.builder().token(TELEGRAM_TOKEN).build()
     conv_handler = ConversationHandler(
-        entry_points=[MessageHandler(filters.TEXT & ~filters.COMMAND, start)],
+         entry_points=[
+            CommandHandler('start', start),  # Triggers on /start command
+            MessageHandler(filters.TEXT & ~filters.COMMAND, start)  # Triggers on any text 
+        ],
         states={
             NAME: [MessageHandler(filters.TEXT & ~filters.COMMAND, name)],
             YEAR: [MessageHandler(filters.TEXT & ~filters.COMMAND, year)],
