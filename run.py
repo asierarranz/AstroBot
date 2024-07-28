@@ -35,12 +35,20 @@ def validar_hora(hora_str):
         return None, None
 
 def crear_carta_astral(nombre, año, mes, dia, hora, minuto, ubicacion):
-    sujeto = AstrologicalSubject(nombre, int(año), int(mes), int(dia), int(hora), int(minuto), ubicacion)
-    informe = Report(sujeto)
-    informe_completo = informe.get_full_report()
-    return formatear_carta(informe_completo)
+    try:
+        logger.info(f"Creando carta astral para {nombre}, {año}-{mes}-{dia}, {hora}:{minuto}, {ubicacion}")
+        sujeto = AstrologicalSubject(nombre, int(año), int(mes), int(dia), int(hora), int(minuto), ubicacion)
+        informe = Report(sujeto)
+        informe_completo = informe.get_full_report()
+        return formatear_carta(informe_completo)
+    except Exception as e:
+        logger.error(f"Error al crear la carta astral: {e}")
+        return None
 
 def formatear_carta(carta):
+    if not carta:
+        return "Error al generar la carta astral."
+    
     parte_interes = carta.split("Date")[1]
     lineas = parte_interes.split('\n')
     lineas_formateadas = []
@@ -52,27 +60,31 @@ def formatear_carta(carta):
     return "🌟----------------------------------------🌟\nDate" + '\n'.join(lineas_formateadas)
 
 def obtener_prediccion_astrologica(nombre, ubicacion, carta):
-    endpoint = 'https://api.openai.com/v1/chat/completions'
-    headers = {
-        'Content-Type': 'application/json',
-        'Authorization': f'Bearer {OPENAI_API_KEY}'
-    }
-    prompt = f"""
-    🌟🔮 Tú eres una bruja hábil en leer a las personas. Aquí está la carta astral de alguien especial. Basándote en ella, realiza una lectura profunda sobre esta persona. Sumérgete en aspectos clave como pasatiempos, familia, trabajo y vida amorosa. Recuerda, eres una bruja astuta y hábil, capaz de hacer afirmaciones muy precisas con absoluta certeza:
+    try:
+        endpoint = 'https://api.openai.com/v1/chat/completions'
+        headers = {
+            'Content-Type': 'application/json',
+            'Authorization': f'Bearer {OPENAI_API_KEY}'
+        }
+        prompt = f"""
+        🌟🔮 Tú eres una bruja hábil en leer a las personas. Aquí está la carta astral de alguien especial. Basándote en ella, realiza una lectura profunda sobre esta persona. Sumérgete en aspectos clave como pasatiempos, familia, trabajo y vida amorosa. Recuerda, eres una bruja astuta y hábil, capaz de hacer afirmaciones muy precisas con absoluta certeza:
 
-    {carta}
+        {carta}
 
-    🧙‍♀️ El nombre de la persona es {nombre}. Háblale a {nombre} en segunda persona, como si le estuvieras hablando directamente. No menciones la carta astral directamente; úsala solo como guía en tus predicciones. Imagina sus pasatiempos y lo que más valora en la vida cotidiana. Considera su posible edad (GenZ o Millennial) y género (determina por el nombre), así como su origen de {ubicacion}. Usa muchos emojis en la respuesta, uno o dos por párrafo, haciéndolos relevantes a lo que estás diciendo. 🌌✨
-    """
-    data = {
-        'model': 'gpt-4o',
-        'messages': [{'role': 'system', 'content': 'Eres una experta bruja en leer a las personas a través de sus cartas astrales. Usa tu habilidad para revelar detalles precisos y profundos sobre sus vidas, intereses y personalidades.'},
-                     {'role': 'user', 'content': prompt}]
-    }
-    response = requests.post(endpoint, headers=headers, json=data)
-    respuesta_prediccion = response.json()
-    contenido = respuesta_prediccion['choices'][0]['message']['content']
-    return contenido
+        🧙‍♀️ El nombre de la persona es {nombre}. Háblale a {nombre} en segunda persona, como si le estuvieras hablando directamente. No menciones la carta astral directamente; úsala solo como guía en tus predicciones. Imagina sus pasatiempos y lo que más valora en la vida cotidiana. Considera su posible edad (GenZ o Millennial) y género (determina por el nombre), así como su origen de {ubicacion}. Usa muchos emojis en la respuesta, uno o dos por párrafo, haciéndolos relevantes a lo que estás diciendo. 🌌✨
+        """
+        data = {
+            'model': 'gpt-4o',
+            'messages': [{'role': 'system', 'content': 'Eres una experta bruja en leer a las personas a través de sus cartas astrales. Usa tu habilidad para revelar detalles precisos y profundos sobre sus vidas, intereses y personalidades.'},
+                         {'role': 'user', 'content': prompt}]
+        }
+        response = requests.post(endpoint, headers=headers, json=data)
+        respuesta_prediccion = response.json()
+        contenido = respuesta_prediccion['choices'][0]['message']['content']
+        return contenido
+    except Exception as e:
+        logger.error(f"Error al obtener la predicción astrológica: {e}")
+        return "Error al obtener la predicción astrológica."
 
 def registrar_interaccion_usuario(context):
     with open("usuarios.txt", "a") as archivo:
@@ -145,29 +157,34 @@ async def ubicacion(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     ubicacion = update.message.text.strip()
     if len(ubicacion) <= 50:
         context.user_data["ubicacion"] = ubicacion
+        logger.info(f"Ubicación recibida: {ubicacion}")
         carta = crear_carta_astral(context.user_data["nombre"], context.user_data["año"],
                                    context.user_data["mes"], context.user_data["dia"],
                                    context.user_data["hora"], context.user_data["minuto"],
                                    context.user_data["ubicacion"])
-        await update.message.reply_text(f"🌌 ¡Aquí está tu carta astral, revelada ante mis ojos!\n{carta}")
-        await update.message.reply_text("🔮 Dame un momento mientras consulto las estrellas y tejo tu predicción...")
-        prediccion = obtener_prediccion_astrologica(context.user_data["nombre"], context.user_data["ubicacion"], carta)
-        
-        await update.message.reply_text("⭐ Con las estrellas como testigo, aquí está tu predicción:")
-        await asyncio.sleep(2)  # Pausa de 2 segundos para suspense
+        if carta:
+            await update.message.reply_text(f"🌌 ¡Aquí está tu carta astral, revelada ante mis ojos!\n{carta}")
+            await update.message.reply_text("🔮 Dame un momento mientras consulto las estrellas y tejo tu predicción...")
+            prediccion = obtener_prediccion_astrologica(context.user_data["nombre"], context.user_data["ubicacion"], carta)
+            
+            await update.message.reply_text("⭐ Con las estrellas como testigo, aquí está tu predicción:")
+            await asyncio.sleep(2)  # Pausa de 2 segundos para suspense
 
-        parrafos_prediccion = prediccion.split('\n')
-        for parrafo in parrafos_prediccion:
-            if parrafo.strip():  # Solo enviar párrafos no vacíos
-                await update.message.reply_text(parrafo)
-                await asyncio.sleep(7)  # Pausa de 7 segundos entre párrafos
+            parrafos_prediccion = prediccion.split('\n')
+            for parrafo in parrafos_prediccion:
+                if parrafo.strip():  # Solo enviar párrafos no vacíos
+                    await update.message.reply_text(parrafo)
+                    await asyncio.sleep(7)  # Pausa de 7 segundos entre párrafos
 
-        registrar_interaccion_usuario(context)  # Registrar la interacción del usuario
-        await asyncio.sleep(10)  # Pausa de 10 segundos antes de preguntar si desean continuar
-        await update.message.reply_text(
-            '🌟 ¡Espero que mis palabras resuenen contigo! ¿Te gustaría seguir preguntando sobre otras almas de las que desees saber más?'
-        )
-        return REPETIR
+            registrar_interaccion_usuario(context)  # Registrar la interacción del usuario
+            await asyncio.sleep(10)  # Pausa de 10 segundos antes de preguntar si desean continuar
+            await update.message.reply_text(
+                '🌟 ¡Espero que mis palabras resuenen contigo! ¿Te gustaría seguir preguntando sobre otras almas de las que desees saber más?'
+            )
+            return REPETIR
+        else:
+            await update.message.reply_text("⚠️ Hubo un error al generar tu carta astral. Por favor, intenta de nuevo más tarde.")
+            return ConversationHandler.END
     else:
         await update.message.reply_text("🌆 Ese lugar parece demasiado largo, ¿puedes indicar una ciudad importante más cercana?")
         return UBICACION
