@@ -122,7 +122,7 @@ async def mes(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 
 async def dia(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     dia = quitar_ceros_inicio(update.message.text)
-    if dia es not None and 1 <= int(dia) <= 31:
+    if dia is not None and 1 <= int(dia) <= 31:
         context.user_data["dia"] = dia
         await update.message.reply_text("⏰ ¿A qué hora comenzó a fluir tu magia? Dime la hora en formato HH:MM (24h)")
         return HORA
