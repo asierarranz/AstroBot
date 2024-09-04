@@ -300,7 +300,9 @@ async def generate_chart_and_prediction(update: Update, context: ContextTypes.DE
             context.user_data["country_code"]
         )
         if chart:
-            await update.message.reply_text(f"🌌 ¡Aquí está tu carta astral, revelada a mis ojos!\n{chart}")
+            await update.message.reply_text(f"🌌 Un momento que me concentre...")
+            await asyncio.sleep(3)
+            await update.message.reply_text(f"🌌 ¡Aquí está tu carta astral, revelada a mis ojos!\n\n\n\n{chart}")
             
             # Wait for the SVG file to be created
             await asyncio.sleep(2)
