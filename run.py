@@ -1,65 +1,92 @@
 #!/usr/bin/env python
 import logging
-from telegram import Update, ReplyKeyboardRemove, ReplyKeyboardMarkup
+from telegram import Update, ReplyKeyboardRemove, ReplyKeyboardMarkup, InputFile
 from telegram.ext import Application, CommandHandler, ConversationHandler, MessageHandler, filters, ContextTypes
-from kerykeion import Report, AstrologicalSubject
-import requests, asyncio
+from kerykeion import Report, AstrologicalSubject, KerykeionChartSVG
+import requests, asyncio, unicodedata, os, time
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-# Habilitar logging en archivo
-logging.basicConfig(filename='actividad_del_bot.log', level=logging.INFO,
+# Enable logging to a file
+logging.basicConfig(filename='bot_activity.log', level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Constantes para etapas de la conversación
-(NOMBRE, AÑO, MES, DIA, HORA, UBICACION, RESULTADO, REPETIR) = range(8)
+# Constants for conversation stages
+(NAME, YEAR, MONTH, DAY, TIME, LOCATION, COUNTRY_CODE, RESULT, REPEAT) = range(9)
 
-# Claves de API
-TELEGRAM_TOKEN = "7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY"
-OPENAI_API_KEY = "sk-proj-qB50VcbkJBZdzm5dXV9PT3BlbkFJBAK619TeTVNu76CPHaM8"
+# API keys
+telegram_token = os.getenv('TELEGRAM_TOKEN')
+openai_api_key = os.getenv('OPENAI_API_KEY')
 
-# Funciones auxiliares
-def quitar_ceros_inicio(numero_str):
+# Arrays of main cities
+ARGENTINA_CITIES = ["buenos aires", "cordoba", "rosario", "mendoza", "la plata", "san miguel de tucuman", "mar del plata", "salta", "santa fe", "san juan"]
+SPAIN_CITIES = ["madrid", "barcelona", "valencia", "sevilla", "zaragoza", "malaga", "murcia", "palma", "las palmas", "bilbao"]
+
+def normalize_string(input_str):
+    return ''.join(
+        c for c in unicodedata.normalize('NFD', input_str)
+        if unicodedata.category(c) != 'Mn'
+    ).lower()
+
+# Auxiliary functions
+def strip_leading_zeros(number_str):
     try:
-        return str(int(numero_str))
+        return str(int(number_str))
     except ValueError:
         return None
 
-def validar_hora(hora_str):
+def validate_time(time_str):
     try:
-        hora, minuto = map(int, hora_str.split(":"))
-        if 0 <= hora <= 23 and 0 <= minuto <= 59:
-            return hora, minuto
+        hour, minute = map(int, time_str.split(":"))
+        if 0 <= hour <= 23 and 0 <= minute <= 59:
+            return hour, minute
         else:
             return None, None
     except ValueError:
         return None, None
 
-def crear_carta_astral(nombre, año, mes, dia, hora, minuto, ubicacion):
+def create_astrological_chart(name, year, month, day, hour, minute, location, country_code):
     try:
-        logger.info(f"Creando carta astral para {nombre}, {año}-{mes}-{dia}, {hora}:{minuto}, {ubicacion}")
-        sujeto = AstrologicalSubject(nombre, int(año), int(mes), int(dia), int(hora), int(minuto), ubicacion)
-        informe = Report(sujeto)
-        informe_completo = informe.get_full_report()
-        return formatear_carta(informe_completo)
+        logger.info(f"Creating astrological chart for {name}, {year}-{month}-{day}, {hour}:{minute}, {location}, {country_code}")
+        subject = AstrologicalSubject(
+            name,
+            int(year),
+            int(month),
+            int(day),
+            int(hour),
+            int(minute),
+            location,
+            country_code
+        )
+        report = Report(subject)
+        full_report = report.get_full_report()
+        
+        # Create SVG chart
+        natal_chart = KerykeionChartSVG(subject, theme="dark", chart_language="ES")
+        natal_chart.makeSVG()
+        
+        return format_chart(full_report)
     except Exception as e:
-        logger.error(f"Error al crear la carta astral: {e}")
+        logger.error(f"Error creating astrological chart: {e}")
         return None
 
-def formatear_carta(carta):
-    if not carta:
-        return "Error al generar la carta astral."
+def format_chart(chart):
+    if not chart:
+        return "Error generating astrological chart."
     
-    parte_interes = carta.split("Date")[1]
-    lineas = parte_interes.split('\n')
-    lineas_formateadas = []
-    for linea in lineas:
-        linea = linea.replace('+', '-')
-        if '-' in linea:
-            linea = linea[:57]
-        lineas_formateadas.append(linea)
-    return "🌟----------------------------------------🌟\nDate" + '\n'.join(lineas_formateadas)
+    part_of_interest = chart.split("Date")[1]
+    lines = part_of_interest.split('\n')
+    formatted_lines = []
+    for line in lines:
+        line = line.replace('+', '-')
+        if '-' in line:
+            line = line[:57]
+        formatted_lines.append(line)
+    return "🌟----------------------------------------🌟\nDate" + '\n'.join(formatted_lines)
 
-def obtener_prediccion_astrologica(nombre, ubicacion, carta):
+def get_astrological_prediction(name, location, chart):
     try:
         endpoint = 'https://api.openai.com/v1/chat/completions'
         headers = {
@@ -67,166 +94,268 @@ def obtener_prediccion_astrologica(nombre, ubicacion, carta):
             'Authorization': f'Bearer {OPENAI_API_KEY}'
         }
         prompt = f"""
-        🌟🔮 Tú eres una bruja hábil en leer a las personas. Aquí está la carta astral de alguien especial. Basándote en ella, realiza una lectura profunda sobre esta persona. Sumérgete en aspectos clave como pasatiempos, familia, trabajo y vida amorosa. Recuerda, eres una bruja astuta y hábil, capaz de hacer afirmaciones muy precisas con absoluta certeza:
+        🌟🔮 Eres una astróloga experta en leer a las personas. Aquí tienes la carta astral de alguien especial. Basándote en ella, proporciona una lectura profunda sobre esta persona. Profundiza en aspectos clave como hobbies, familia, trabajo y vida amorosa. Recuerda, eres una astróloga hábil y experta, capaz de hacer afirmaciones muy precisas con absoluta certeza:
 
-        {carta}
+        {chart}
 
-        🧙‍♀️ El nombre de la persona es {nombre}. Háblale a {nombre} en segunda persona, como si le estuvieras hablando directamente. No menciones la carta astral directamente; úsala solo como guía en tus predicciones. Imagina sus pasatiempos y lo que más valora en la vida cotidiana. Considera su posible edad (GenZ o Millennial) y género (determina por el nombre), así como su origen de {ubicacion}. Usa muchos emojis en la respuesta, uno o dos por párrafo, haciéndolos relevantes a lo que estás diciendo. 🌌✨
+        🧙‍♀️ El nombre de la persona es {name}. Háblale a {name} en segunda persona, como si le estuvieras hablando directamente. No menciones la carta astral directamente; úsala solo como guía en tus predicciones. Imagina sus hobbies y lo que más valora en la vida cotidiana. Considera su posible edad (GenZ o Millennial) y género (determinado por el nombre), así como su origen de {location}. Usa muchos emojis en la respuesta, uno o dos por párrafo, haciéndolos relevantes a lo que estás diciendo. 🌌✨
         """
         data = {
-            'model': 'gpt-4o',
-            'messages': [{'role': 'system', 'content': 'Eres una experta bruja en leer a las personas a través de sus cartas astrales. Usa tu habilidad para revelar detalles precisos y profundos sobre sus vidas, intereses y personalidades.'},
+            'model': 'gpt-4',
+            'messages': [{'role': 'system', 'content': 'Eres una astróloga experta en leer a las personas a través de sus cartas astrales. Usa tu habilidad para revelar detalles precisos y profundos sobre sus vidas, intereses y personalidades.'},
                          {'role': 'user', 'content': prompt}]
         }
         response = requests.post(endpoint, headers=headers, json=data)
-        respuesta_prediccion = response.json()
-        contenido = respuesta_prediccion['choices'][0]['message']['content']
-        return contenido
+        response.raise_for_status()  # Raise an exception for HTTP errors
+        prediction_response = response.json()
+        logger.info(f"OpenAI API response: {prediction_response}")
+        content = prediction_response['choices'][0]['message']['content']
+        return content
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Error en la solicitud: {e}")
+        return "Error al obtener la predicción astrológica debido a un error en la solicitud."
+    except KeyError as e:
+        logger.error(f"Error de clave: {e}, contenido de la respuesta: {prediction_response}")
+        return "Error al obtener la predicción astrológica debido a un error de clave."
     except Exception as e:
-        logger.error(f"Error al obtener la predicción astrológica: {e}")
-        return "Error al obtener la predicción astrológica."
+        logger.error(f"Error inesperado: {e}")
+        return "Error al obtener la predicción astrológica debido a un error inesperado."
 
-def registrar_interaccion_usuario(context):
-    with open("usuarios.txt", "a") as archivo:
-        datos_usuario = context.user_data
-        archivo.write(f"Nombre: {datos_usuario.get('nombre', 'Desconocido')}\n")
-        archivo.write(f"Fecha: {datos_usuario.get('dia', 'DD')}-{datos_usuario.get('mes', 'MM')}-{datos_usuario.get('año', 'AAAA')}\n")
-        archivo.write(f"Hora: {datos_usuario.get('hora', 'HH')}:{datos_usuario.get('minuto', 'MM')}\n")
-        archivo.write(f"Ubicación: {datos_usuario.get('ubicacion', 'Desconocida')}\n")
-        archivo.write("-------------------------------\n")
+def log_user_interaction(context):
+    with open("users.txt", "a") as file:
+        user_data = context.user_data
+        file.write(f"Name: {user_data.get('name', 'Unknown')}\n")
+        file.write(f"Date: {user_data.get('day', 'DD')}-{user_data.get('month', 'MM')}-{user_data.get('year', 'YYYY')}\n")
+        file.write(f"Time: {user_data.get('hour', 'HH')}:{user_data.get('minute', 'MM')}\n")
+        file.write(f"Location: {user_data.get('location', 'Unknown')}\n")
+        file.write("-------------------------------\n")
 
-# Funciones de manejo de comandos
-async def inicio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+# Command handling functions
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     await update.message.reply_text(
-        "🌙✨ ¡Saludos! Soy la Urubruja, nacida en los místicos paisajes de Cabo Polonio. ¿Cuál es tu nombre, alma curiosa?",
+        "🌙✨ ¡Hola! Soy la A.i.stróloga, tu guía mística en el cosmos digital. Mi modelo de inteligencia artificial ha sido entrenado con todo el conocimiento ancestral humano de la astrología. ¿Cuál es tu nombre, alma curiosa?",
         reply_markup=ReplyKeyboardRemove(),
     )
-    return NOMBRE
+    return NAME
 
-async def nombre(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    nombre = update.message.text.strip()
-    if len(nombre) > 40:
-        await update.message.reply_text("🔮 Tu nombre parece ser muy largo, ¿puedes darme uno más corto?")
-        return NOMBRE
-    context.user_data["nombre"] = nombre
-    await update.message.reply_text("🌟 Un placer conocerte, ¿en qué año (AAAA) cruzaste por primera vez el umbral del tiempo?")
-    return AÑO
+async def name(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    name = update.message.text.strip()
+    if len(name) > 40:
+        await update.message.reply_text("🔮 Tu nombre parece demasiado largo, ¿puedes darme uno más corto?")
+        return NAME
+    context.user_data["name"] = name
+    await update.message.reply_text("🌟 Un placer conocerte, ¿en qué año (AAAA) cruzaste el umbral del tiempo por primera vez?")
+    return YEAR
 
-async def año(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    año = quitar_ceros_inicio(update.message.text)
-    if año is not None and 1900 <= int(año) <= 2027:
-        context.user_data["año"] = año
+async def year(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    year = strip_leading_zeros(update.message.text)
+    if year is not None and 1900 <= int(year) <= 2027:
+        context.user_data["year"] = year
         await update.message.reply_text("📅 Ahora dime, ¿en qué mes (MM) te vio nacer el sol por primera vez?")
-        return MES
+        return MONTH
     else:
         await update.message.reply_text("⏳ Ese año no parece válido, por favor intenta con otro.")
-        return AÑO
+        return YEAR
 
-async def mes(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    mes = quitar_ceros_inicio(update.message.text)
-    if mes is not None and 1 <= int(mes) <= 12:
-        context.user_data["mes"] = mes
+async def month(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    month = strip_leading_zeros(update.message.text)
+    if month is not None and 1 <= int(month) <= 12:
+        context.user_data["month"] = month
         await update.message.reply_text("🌒 Interesante, ¿y en qué día (DD) despertaste a este mundo?")
-        return DIA
+        return DAY
     else:
         await update.message.reply_text("📆 Ese mes no parece válido, por favor intenta con otro.")
-        return MES
+        return MONTH
 
-async def dia(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    dia = quitar_ceros_inicio(update.message.text)
-    if dia is not None and 1 <= int(dia) <= 31:
-        context.user_data["dia"] = dia
+async def day(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    day = strip_leading_zeros(update.message.text)
+    if day is not None and 1 <= int(day) <= 31:
+        context.user_data["day"] = day
         await update.message.reply_text("⏰ ¿A qué hora comenzó a fluir tu magia? Dime la hora en formato HH:MM (24h)")
-        return HORA
+        return TIME
     else:
         await update.message.reply_text("🗓️ Ese día no parece válido, por favor intenta con otro.")
-        return DIA
+        return DAY
 
-async def hora(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    hora, minuto = validar_hora(update.message.text)
-    if hora is not None:
-        context.user_data["hora"] = hora
-        context.user_data["minuto"] = minuto
-        await update.message.reply_text("🌍 Fascinante, ¿cuál es el lugar de poder donde tu esencia fue invocada por primera vez? (Indica la ciudad importante más cercana)")
-        return UBICACION
+async def time(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    hour, minute = validate_time(update.message.text)
+    if hour is not None:
+        context.user_data["hour"] = hour
+        context.user_data["minute"] = minute
+        await update.message.reply_text("🌍 Fascinante, ¿cuál es el lugar de poder donde tu esencia fue invocada por primera vez? (Indica la ciudad principal más cercana)")
+        return LOCATION
     else:
         await update.message.reply_text("⌛ Asegúrate de usar el formato correcto HH:MM.")
-        return HORA
+        return TIME
 
-async def ubicacion(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    ubicacion = update.message.text.strip()
-    if len(ubicacion) <= 50:
-        context.user_data["ubicacion"] = ubicacion
-        logger.info(f"Ubicación recibida: {ubicacion}")
-        carta = crear_carta_astral(context.user_data["nombre"], context.user_data["año"],
-                                   context.user_data["mes"], context.user_data["dia"],
-                                   context.user_data["hora"], context.user_data["minuto"],
-                                   context.user_data["ubicacion"])
-        if carta:
-            await update.message.reply_text(f"🌌 ¡Aquí está tu carta astral, revelada ante mis ojos!\n{carta}")
-            await update.message.reply_text("🔮 Dame un momento mientras consulto las estrellas y tejo tu predicción...")
-            prediccion = obtener_prediccion_astrologica(context.user_data["nombre"], context.user_data["ubicacion"], carta)
-            
-            await update.message.reply_text("⭐ Con las estrellas como testigo, aquí está tu predicción:")
-            await asyncio.sleep(2)  # Pausa de 2 segundos para suspense
-
-            parrafos_prediccion = prediccion.split('\n')
-            for parrafo in parrafos_prediccion:
-                if parrafo.strip():  # Solo enviar párrafos no vacíos
-                    await update.message.reply_text(parrafo)
-                    await asyncio.sleep(7)  # Pausa de 7 segundos entre párrafos
-
-            registrar_interaccion_usuario(context)  # Registrar la interacción del usuario
-            await asyncio.sleep(10)  # Pausa de 10 segundos antes de preguntar si desean continuar
-            await update.message.reply_text(
-                '🌟 ¡Espero que mis palabras resuenen contigo! ¿Te gustaría seguir preguntando sobre otras almas de las que desees saber más?'
-            )
-            return REPETIR
+async def location(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    location = normalize_string(update.message.text.strip())
+    if len(location) <= 50:
+        context.user_data["location"] = location
+        logger.info(f"Location received: {location}")
+        
+        if location in ARGENTINA_CITIES:
+            country_code = "AR"
+        elif location in SPAIN_CITIES:
+            country_code = "ES"
         else:
-            await update.message.reply_text("⚠️ Hubo un error al generar tu carta astral. Por favor, intenta de nuevo más tarde.")
+            await update.message.reply_text("🌍 No he encontrado tu ciudad en mi base de datos. Por favor, introduce las dos letras que indican tu país (por ejemplo, ES para España, AR para Argentina).")
+            return COUNTRY_CODE
+        
+        context.user_data["country_code"] = country_code
+        try:
+            chart = create_astrological_chart(
+                context.user_data["name"],
+                context.user_data["year"],
+                context.user_data["month"],
+                context.user_data["day"],
+                context.user_data["hour"],
+                context.user_data["minute"],
+                context.user_data["location"],
+                context.user_data["country_code"]
+            )
+            if chart:
+                await update.message.reply_text(f"🌌 ¡Aquí está tu carta astral, revelada a mis ojos!\n{chart}")
+                
+                # Wait for the SVG file to be created
+                await asyncio.sleep(2)
+                
+                # Find and send the SVG file
+                home_dir = os.path.expanduser("~")
+                svg_files = [f for f in os.listdir(home_dir) if f.endswith('.svg')]
+                if svg_files:
+                    svg_path = os.path.join(home_dir, svg_files[0])
+                    with open(svg_path, 'rb') as svg_file:
+                        await update.message.reply_document(InputFile(svg_file))
+                    os.remove(svg_path)  # Remove the SVG file after sending
+                
+                await update.message.reply_text("🔮 Dame un momento mientras consulto las estrellas y tejo tu predicción...")
+                prediction = get_astrological_prediction(context.user_data["name"], context.user_data["location"], chart)
+                
+                await update.message.reply_text("⭐ Con las estrellas como testigo, aquí está tu predicción:")
+                await asyncio.sleep(2)  # 2-second pause for suspense
+
+                prediction_paragraphs = prediction.split('\n')
+                for paragraph in prediction_paragraphs:
+                    if paragraph.strip():  # Only send non-empty paragraphs
+                        await update.message.reply_text(paragraph)
+                        await asyncio.sleep(7)  # 7-second pause between paragraphs
+
+                log_user_interaction(context)  # Log the user interaction
+                await asyncio.sleep(10)  # 10-second pause before asking if they want to continue
+                await update.message.reply_text(
+                    '🌟 ¡Espero que mis palabras resuenen contigo! ¿Te gustaría seguir preguntando sobre otras almas que deseas conocer más?'
+                )
+                return REPEAT
+            else:
+                error_message = f"Error generating chart for: {context.user_data}"
+                print(error_message)  # Debug print
+                await update.message.reply_text(f"⚠️ Hubo un error al generar tu carta astral. Detalles: {error_message}")
+                return ConversationHandler.END
+        except Exception as e:
+            error_message = f"Exception occurred: {str(e)}\nUser data: {context.user_data}"
+            print(error_message)  # Debug print
+            logger.error(error_message)
+            await update.message.reply_text(f"⚠️ Hubo un error al generar tu carta astral. Detalles: {error_message}")
             return ConversationHandler.END
     else:
-        await update.message.reply_text("🌆 Ese lugar parece demasiado largo, ¿puedes indicar una ciudad importante más cercana?")
-        return UBICACION
+        await update.message.reply_text("🌆 Ese lugar parece demasiado largo, ¿puedes indicar una ciudad principal más cercana?")
+        return LOCATION
 
-async def preguntar_repetir(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    teclado_respuesta = [['Sí', 'No']]
-    await update.message.reply_text(
-        '🌟 ¡Espero que mis palabras resuenen contigo! ¿Te gustaría seguir preguntando sobre otras almas de las que desees saber más?',
-        reply_markup=ReplyKeyboardMarkup(teclado_respuesta, one_time_keyboard=True, input_field_placeholder='¿Sí o No?')
-    )
-    return REPETIR
+async def country_code(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    country_code = update.message.text.strip().upper()
+    if len(country_code) == 2:
+        context.user_data["country_code"] = country_code
+        try:
+            chart = create_astrological_chart(
+                context.user_data["name"],
+                context.user_data["year"],
+                context.user_data["month"],
+                context.user_data["day"],
+                context.user_data["hour"],
+                context.user_data["minute"],
+                context.user_data["location"],
+                context.user_data["country_code"]
+            )
+            if chart:
+                await update.message.reply_text(f"🌌 ¡Aquí está tu carta astral, revelada a mis ojos!\n{chart}")
+                
+                # Wait for the SVG file to be created
+                await asyncio.sleep(2)
+                
+                # Find and send the SVG file
+                home_dir = os.path.expanduser("~")
+                svg_files = [f for f in os.listdir(home_dir) if f.endswith('.svg')]
+                if svg_files:
+                    svg_path = os.path.join(home_dir, svg_files[0])
+                    with open(svg_path, 'rb') as svg_file:
+                        await update.message.reply_document(InputFile(svg_file))
+                    os.remove(svg_path)  # Remove the SVG file after sending
+                
+                await update.message.reply_text("🔮 Dame un momento mientras consulto las estrellas y tejo tu predicción...")
+                prediction = get_astrological_prediction(context.user_data["name"], context.user_data["location"], chart)
+                
+                await update.message.reply_text("⭐ Con las estrellas como testigo, aquí está tu predicción:")
+                await asyncio.sleep(2)  # 2-second pause for suspense
 
-async def repetir(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    respuesta = update.message.text
-    if respuesta.lower().startswith('s'):
-        await update.message.reply_text("🌠 ¡Maravilloso! ¿Cuál es el nombre de esta nueva alma?")
-        return NOMBRE
+                prediction_paragraphs = prediction.split('\n')
+                for paragraph in prediction_paragraphs:
+                    if paragraph.strip():  # Only send non-empty paragraphs
+                        await update.message.reply_text(paragraph)
+                        await asyncio.sleep(7)  # 7-second pause between paragraphs
+
+                log_user_interaction(context)  # Log the user interaction
+                await asyncio.sleep(10)  # 10-second pause before asking if they want to continue
+                await update.message.reply_text(
+                    '🌟 ¡Espero que mis palabras resuenen contigo! ¿Te gustaría seguir preguntando sobre otras almas que deseas conocer más?'
+                )
+                return REPEAT
+            else:
+                error_message = f"Error generating chart for: {context.user_data}"
+                print(error_message)  # Debug print
+                await update.message.reply_text(f"⚠️ Hubo un error al generar tu carta astral. Detalles: {error_message}")
+                return ConversationHandler.END
+        except Exception as e:
+            error_message = f"Exception occurred: {str(e)}\nUser data: {context.user_data}"
+            print(error_message)  # Debug print
+            logger.error(error_message)
+            await update.message.reply_text(f"⚠️ Hubo un error al generar tu carta astral. Detalles: {error_message}")
+            return ConversationHandler.END
     else:
-        await update.message.reply_text("✨ Lamentablemente, nuestros caminos se separan. ¡Espero que nuestras sendas se crucen nuevamente!", reply_markup=ReplyKeyboardRemove())
+        await update.message.reply_text("🌍 Ese código de país no parece válido. Por favor, introduce las dos letras que indican tu país (por ejemplo, ES para España, AR para Argentina).")
+        return COUNTRY_CODE
+
+async def repeat(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    response = update.message.text
+    if response.lower().startswith('s'):
+        await update.message.reply_text("🌠 ¡Maravilloso! ¿Cuál es el nombre de esta nueva alma?")
+        return NAME
+    else:
+        await update.message.reply_text("✨ Lamentablemente, nuestros caminos se separan. ¡Espero que nuestros caminos se crucen de nuevo!", reply_markup=ReplyKeyboardRemove())
         return ConversationHandler.END
 
-async def cancelar(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    await update.message.reply_text('✨ Lamentablemente, nuestros caminos se separan. ¡Espero que nuestras sendas se crucen nuevamente!', reply_markup=ReplyKeyboardRemove())
+async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    await update.message.reply_text("✨ Lamentablemente, nuestros caminos se separan. ¡Espero que nuestros caminos se crucen de nuevo!", reply_markup=ReplyKeyboardRemove())
     return ConversationHandler.END
 
 def main() -> None:
     application = Application.builder().token(TELEGRAM_TOKEN).build()
     conv_handler = ConversationHandler(
          entry_points=[
-            CommandHandler('start', inicio),  # Se activa con el comando /start
-            MessageHandler(filters.TEXT & ~filters.COMMAND, inicio)  # Se activa con cualquier texto
+            CommandHandler('start', start),  # Activates with the /start command
+            MessageHandler(filters.TEXT & ~filters.COMMAND, start)  # Activates with any text
         ],
         states={
-            NOMBRE: [MessageHandler(filters.TEXT & ~filters.COMMAND, nombre)],
-            AÑO: [MessageHandler(filters.TEXT & ~filters.COMMAND, año)],
-            MES: [MessageHandler(filters.TEXT & ~filters.COMMAND, mes)],
-            DIA: [MessageHandler(filters.TEXT & ~filters.COMMAND, dia)],
-            HORA: [MessageHandler(filters.TEXT & ~filters.COMMAND, hora)],
-            UBICACION: [MessageHandler(filters.TEXT & ~filters.COMMAND, ubicacion)],
-            REPETIR: [MessageHandler(filters.TEXT & ~filters.COMMAND, repetir)]
+            NAME: [MessageHandler(filters.TEXT & ~filters.COMMAND, name)],
+            YEAR: [MessageHandler(filters.TEXT & ~filters.COMMAND, year)],
+            MONTH: [MessageHandler(filters.TEXT & ~filters.COMMAND, month)],
+            DAY: [MessageHandler(filters.TEXT & ~filters.COMMAND, day)],
+            TIME: [MessageHandler(filters.TEXT & ~filters.COMMAND, time)],
+            LOCATION: [MessageHandler(filters.TEXT & ~filters.COMMAND, location)],
+            COUNTRY_CODE: [MessageHandler(filters.TEXT & ~filters.COMMAND, country_code)],
+            REPEAT: [MessageHandler(filters.TEXT & ~filters.COMMAND, repeat)]
         },
-        fallbacks=[CommandHandler("cancel", cancelar)],
+        fallbacks=[CommandHandler("cancel", cancel)],
     )
     application.add_handler(conv_handler)
     application.run_polling()
