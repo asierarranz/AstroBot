@@ -1,2 +1,4 @@
-.log
 .env
+bot_activity.log
+cache/kerykeion_geonames_cache.sqlite
+users.txt
