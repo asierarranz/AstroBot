@@ -238,8 +238,8 @@ async def location(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
                         await update.message.reply_document(InputFile(png_file))
                     
                     # Remove both SVG and PNG files
-                    os.remove(svg_path)
-                    os.remove(png_path)
+                    #os.remove(svg_path)
+                    #os.remove(png_path)
                 
                 await update.message.reply_text("🔮 Dame un momento mientras consulto las estrellas y tejo tu predicción...")
                 prediction = get_astrological_prediction(context.user_data["name"], context.user_data["location"], chart)
