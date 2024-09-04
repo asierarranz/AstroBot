@@ -4276,3 +4276,1093 @@ Keep in mind that the default username is limited to 2000 requests per hour and 
 2024-09-04 02:29:04,976 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
 2024-09-04 02:29:04,977 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
 2024-09-04 02:29:04,977 - telegram.ext.Application - INFO - Application.stop() complete
+2024-09-04 03:07:29,887 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getMe "HTTP/1.1 200 OK"
+2024-09-04 03:07:29,923 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/deleteWebhook "HTTP/1.1 200 OK"
+2024-09-04 03:07:29,924 - telegram.ext.Application - INFO - Application started
+2024-09-04 03:07:42,258 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getMe "HTTP/1.1 200 OK"
+2024-09-04 03:07:42,310 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/deleteWebhook "HTTP/1.1 200 OK"
+2024-09-04 03:07:42,311 - telegram.ext.Application - INFO - Application started
+2024-09-04 03:07:46,942 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:07:47,107 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:07:50,315 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:07:50,488 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:07:53,126 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:07:53,295 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:07:56,253 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:07:56,416 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:07:56,928 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:07:57,101 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:07:58,777 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:07:58,954 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:08:02,270 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:08:02,271 - __main__ - INFO - Location received: buenos aires
+2024-09-04 03:08:02,271 - __main__ - INFO - Creating astrological chart for djd, 1984-6-16, 22:30, buenos aires, AR
+2024-09-04 03:08:02,271 - root - WARNING - 
+********
+NO GEONAMES USERNAME SET!
+Using the default geonames username is not recommended, please set a custom one!
+You can get one for free here:
+https://www.geonames.org/login
+Keep in mind that the default username is limited to 2000 requests per hour and is shared with everyone else using this library.
+********
+2024-09-04 03:08:02,271 - root - INFO - Fetching timezone/coordinates from geonames
+2024-09-04 03:08:02,302 - root - INFO - SVG Generated Correctly in: C:\Users\asier\djd - Natal Chart.svg
+2024-09-04 03:08:02,479 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:08:05,197 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:08:05,358 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:08:36,390 - __main__ - INFO - OpenAI API response: {'id': 'chatcmpl-A3Yn750FrHuyA1ID1rfnB0Hyrs4ew', 'object': 'chat.completion', 'created': 1725412085, 'model': 'gpt-4-0613', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Querido djd,\n\n\U0001f46a\U0001f3e1 Tu carta astral muestra una fuerte influencia de la Casa Cuarta, que está asociada con la familia y el hogar. El Sol, Mercurio, el Nodo Verdadero y Quirón están todos en Géminis en esta casa. Este patrón sugiere que tú tienes una fuerte conexión con tus raíces y tu familia y es posible que tengas buenos recuerdos de tu niñez. También puede indicar que te gustaría mantener tu casa acogedora y quizás tengas un interés en actividades domésticas como la cocina o la jardinería. \U0001f33b\U0001f468\u200d\U0001f373\n\n\U0001f3ad\U0001f31e Con el Sol y Venus en Géminis en tu quinta casa, seguro te gustan los juegos de palabras, puzles y resolver problemas. Disfrutas de las conversaciones inteligentes y probablemente la lectura es uno de tus hobbies favoritos. Además, este aspecto puede señalar una persona muy creativa, te encanta jugar con nuevas ideas y compartir tus pensamientos con los demás. \n\n\U0001f4bc\U0001f680 Tu Casa Décima contiene a Urano en Sagitario, el planeta de la innovación en el signo del aventurero. En un contexto profesional, esto puede sugerir que buscas una carrera que siempre te impulse hacia lo nuevo, donde puedas destacarte a través de ideas revolucionarias. Las profesiones relacionadas con la tecnología, la ciencia o las expediciones podrían atraerte. \n\nPor otro lado, la presencia de Saturno, Marte y Plutón en Escorpio en tu casa novena indica una intensa necesidad de desentrañar verdades. Puedes tener una fascinación por los misterios, el ocultismo, la psicología o cualquier área de conocimiento que permita una profunda exploración. \U0001f9e0\U0001f4a1 \n\nFinalmente, en cuanto a tu vida amorosa, Venus en Géminis en la Casa Quinta podría indicar que valoras la comunicación y la diversión en tus relaciones. \U0001f54a\ufe0f\U0001f495 Puede que te atraigan aquellos con los que puedes tener una conversación emocionante y lúdica. Necesitas variedad y libertad en tus relaciones y podrías tener habilidad para coquetear y encantar a las personas con tu ingenio.\n\n\U0001f308\U0001f320 Así que, djd, aunque esto es solo un esbozo, tu carta astral pinta la imagen de una persona con una inteligencia ágil, una profunda necesidad de conexión con sus raíces y un interés en la exploración de nuevas ideas. Asegúrate de utilizar ese ingenio y amor por la aventura en todos los aspectos de tu vida, y nunca dejes de explorar tu mundo y a ti mismo (tanto interna como externamente). ¡Que los astros te guíen siempre en tu camino! \U0001f30c\u2728\n', 'refusal': None}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 881, 'completion_tokens': 659, 'total_tokens': 1540}, 'system_fingerprint': None}
+2024-09-04 03:08:36,391 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:08:36,650 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:08:38,816 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:08:46,045 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:08:46,435 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:08:53,284 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:08:56,477 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:09:00,542 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:09:06,511 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:09:07,780 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:09:15,015 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:09:16,548 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:09:22,277 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:09:26,587 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:09:36,623 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:09:39,508 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:09:46,663 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:09:56,703 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:10:06,741 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:10:16,784 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:10:26,869 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:10:36,931 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:10:47,029 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:10:57,082 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:11:07,119 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:11:17,161 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:11:27,205 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:11:37,239 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:11:47,281 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:11:57,316 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:12:07,361 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:12:17,404 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:12:27,443 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:12:37,476 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:12:47,514 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:12:57,548 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:13:07,585 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:13:17,621 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:13:27,657 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:13:37,692 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:13:47,729 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:13:57,772 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:14:07,808 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:14:17,846 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:14:27,886 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:14:37,935 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:14:48,007 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:14:58,047 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:15:08,084 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:15:18,119 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:15:28,154 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:15:38,189 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:15:48,232 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:15:58,270 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:16:08,310 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:16:18,346 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:16:28,380 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:16:38,472 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:16:48,508 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:16:58,554 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:17:08,594 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:17:18,629 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:17:28,713 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:17:38,772 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:17:48,814 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:17:58,851 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:18:08,938 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:18:18,977 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:18:29,016 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:18:39,052 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:18:49,091 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:18:59,127 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:19:09,177 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:19:19,218 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:19:29,259 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:19:39,293 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:19:49,329 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:19:59,367 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:20:09,406 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:20:19,441 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:20:29,479 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:20:39,514 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:20:49,552 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:20:59,586 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:21:09,640 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:21:19,677 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:21:23,768 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:21:23,769 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:21:28,840 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:21:28,840 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:21:34,898 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:21:34,898 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:21:42,470 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:21:42,470 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:21:46,192 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:21:46,426 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:21:49,912 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:21:49,913 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:21:54,971 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:21:54,971 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:21:57,052 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:21:57,285 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:22:00,528 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:22:00,529 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:39:44,285 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getMe "HTTP/1.1 200 OK"
+2024-09-04 03:39:44,317 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/deleteWebhook "HTTP/1.1 200 OK"
+2024-09-04 03:39:44,318 - telegram.ext.Application - INFO - Application started
+2024-09-04 03:39:48,428 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:39:48,428 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:39:53,991 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:39:53,991 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:39:59,545 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:39:59,545 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:40:02,812 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:40:03,031 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:40:05,857 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:40:05,857 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:40:07,180 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:40:07,333 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:40:10,910 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:40:10,911 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:40:12,885 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:40:13,104 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:40:16,455 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:40:16,456 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:40:18,035 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:40:18,186 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:40:21,518 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:40:21,519 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:40:27,077 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 409 Conflict"
+2024-09-04 03:40:27,077 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 753, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 747, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_updater.py", line 377, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 4366, in get_updates
+    await self._post(
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 623, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\_bot.py", line 652, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 201, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\request\_baserequest.py", line 384, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-04 03:40:34,623 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:40:34,848 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:40:39,854 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:40:40,003 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:40:44,279 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:40:44,432 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:40:47,062 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:40:47,252 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:40:55,399 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:40:55,400 - __main__ - INFO - Location received: buenos aires
+2024-09-04 03:40:55,400 - __main__ - INFO - Creating astrological chart for buenos aires, 1984-6-16, 22:30, buenos aires, AR
+2024-09-04 03:40:55,400 - root - WARNING - 
+********
+NO GEONAMES USERNAME SET!
+Using the default geonames username is not recommended, please set a custom one!
+You can get one for free here:
+https://www.geonames.org/login
+Keep in mind that the default username is limited to 2000 requests per hour and is shared with everyone else using this library.
+********
+2024-09-04 03:40:55,400 - root - INFO - Fetching timezone/coordinates from geonames
+2024-09-04 03:40:55,433 - root - INFO - SVG Generated Correctly in: C:\Users\asier\buenos aires - Natal Chart.svg
+2024-09-04 03:40:55,664 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:40:58,317 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:40:59,486 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:40:59,656 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:41:30,426 - __main__ - INFO - OpenAI API response: {'id': 'chatcmpl-A3ZIyNN9RefSPHy5oJV63nu0NjXyg', 'object': 'chat.completion', 'created': 1725414060, 'model': 'gpt-4-0613', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Buenos Aires, con tu sol en Géminis y gallardo en la quinta casa, tienes una personalidad vibrante, llena de curiosidad y siempre estás en busca de nuevas experiencias \U0001f31f. Eres adaptable, versátil y disfrutas de una amplia variedad de hobbies. Puedo ver que te atraen especialmente las actividades que te retan a pensar y aprender, como los juegos de estrategia, la literatura y quizás hasta el periodismo o la escritura \U0001f4d6\U0001f58b\ufe0f.\n\nTu dedicación a la familia está respaldada por tu Mercurio en Géminis en la cuarta casa. Siendo el planeta de la comunicación en el signo de los gemelos, indicaría una relación estrecha y comunicativa con tu familia. Tu hogar sin duda es un lugar lleno de conversaciones intensas y estimulantes \U0001f4ac\U0001f3e1.\n\nHablando de tu vida laboral, la presencia de Júpiter retrógrado en Capricornio en tu undécima casa sugiere una dedicación seria a tu carrera. Probablemente asumes roles de liderazgo y tienes una visión clara de lo que quieres lograr. Pero ojo, los planetas retrógrados pueden implicar retos o atrasos, recuerda siempre dar todo de ti para afrontrarlos valientemente \U0001f4bc\U0001f3d9\ufe0f.\n\nEn cuanto a tu vida amorosa, con Venus en Géminis en la quinta casa, hay un enfoque en el romance juguetón y en la búsqueda constante de estímulos emocionales. Tu añoranza por variedad y novedad también se aplica al amor: siempre estás en busca de alguien que pueda mantenerse al paso con tu energía vibrante y tu mente inquisitiva \U0001f495\U0001f483.\n\nSin embargo, Buenos Aires, aunque tu vida está llena de entusiasmo y curiosidad, tu luna en Acuario en la duodécima casa habla de una profundidad emocional escondida que no todos llegan a ver. A veces puedes sentirte aislado/a, especialmente cuando te sientes comprendido/a solo a nivel superficial. Recuerda, está bien abrirte y mostrar tu vulnerabilidad a esas personas especiales de confianza\U0001f319\U0001f494.\n\nTu camino parece lleno de conversación y cambio, Buenos Aires. No tengas miedo de explorar todas las maravillosas oportunidades que estos planetas te prometen. Disfruta de la aventura \U0001f30d\u2728.', 'refusal': None}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 885, 'completion_tokens': 567, 'total_tokens': 1452}, 'system_fingerprint': None}
+2024-09-04 03:41:30,428 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:41:30,667 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:41:32,827 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:41:40,085 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:41:40,464 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:41:47,325 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:41:50,499 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:41:54,542 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:42:00,535 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:42:01,792 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:42:09,021 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:42:10,569 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:42:20,602 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:42:26,253 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:42:30,636 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:42:40,671 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:42:43,794 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getMe "HTTP/1.1 200 OK"
+2024-09-04 03:42:43,828 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/deleteWebhook "HTTP/1.1 200 OK"
+2024-09-04 03:42:43,829 - telegram.ext.Application - INFO - Application started
+2024-09-04 03:42:47,226 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:42:47,376 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:42:49,207 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:42:49,360 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:42:52,387 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:42:52,539 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:42:54,896 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:42:55,046 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:42:57,159 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:42:57,311 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:42:59,829 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:42:59,981 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:43:06,836 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:43:06,837 - __main__ - INFO - Location received: buenos aires
+2024-09-04 03:43:06,837 - __main__ - INFO - Creating astrological chart for asier, 1984-6-16, 22:30, buenos aires, AR
+2024-09-04 03:43:06,837 - root - WARNING - 
+********
+NO GEONAMES USERNAME SET!
+Using the default geonames username is not recommended, please set a custom one!
+You can get one for free here:
+https://www.geonames.org/login
+Keep in mind that the default username is limited to 2000 requests per hour and is shared with everyone else using this library.
+********
+2024-09-04 03:43:06,837 - root - INFO - Fetching timezone/coordinates from geonames
+2024-09-04 03:43:06,868 - root - INFO - SVG Generated Correctly in: C:\Users\asier\asier - Natal Chart.svg
+2024-09-04 03:43:07,100 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:43:09,774 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:43:11,322 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:43:11,486 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:43:44,575 - __main__ - INFO - OpenAI API response: {'id': 'chatcmpl-A3ZL5wU60OyHO4sBcDKkBNCPyrdTh', 'object': 'chat.completion', 'created': 1725414191, 'model': 'gpt-4-0613', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Asier, \U0001f680\u2728 tu gran vitalidad y entusiasmo por la vida reflejan la luminosidad de tu sol en Géminis. Eres un buscador de conocimiento voraz, \U0001f4da un favorito de los juegos de palabras y las trivia, y quizás incluso te encantan los rompecabezas y enigmas. ¡Probablemente sean tu taza de té! Las conversaciones y debates intelectualmente estimulantes te hacen brillar.\n\nNo es de extrañar que, con tanta energía de Géminis, te encuentras entre una multitud y probablemente mantienes una grata compañía. Tal vez te encuentres bailando \U0001f483\U0001f57a o frecuentemente celebrando con amigos, ya que tu sol y Venus se encuentran en la casa de la diversión, la creatividad y el amor. Eres el alma de las fiestas, Asier.\n\nTu Luna en Acuario en la casa de lo oculto \U0001f52e te invita a explorar las verdades universales, la espiritualidad y el análisis profundo de la psique humana. La mente humana te fascina, ¿no es así? Quizás una película de ciencia ficción \U0001f6f8 o un buen libro de psicología \U0001f4d6 sea tu elección de relajación en un viernes por la noche.\n\nAunque pareces un libro abierto \U0001f4d6, llevas tus secretos y emociones guardados en el rincón más profundo de tu corazón gracias a Plutón en Escorpio en la novena casa. Podría ser que te preocupa compartir ciertos aspectos de tu vida con otros. Sin embargo, este también es un gran indicador de una pasión por los viajes, aventuras y descubrimiento de nuevas culturas. ¿Te suena familiar, aventurero incansable? \u2708\ufe0f\U0001f30e\n\nTu Marte retrógrado en Escorpio y en la casa del trabajo indica una cierta frustración o lucha en tu carrera. No te preocupes, Asier, estos desafíos solo te están moldeando para ser más resistente y estratégico en tus enfoques. \U0001f914\U0001f4a1Pronto, esa fortaleza interior te llevará a alcanzar mayores alturas en tu carrera. ¡Recuerda, la resistencia es la clave del éxito! \U0001f5dd\ufe0f\U0001f3c5\n\nPor último, pero no menos importante, con Júpiter en Capricornio en la casa de las amistades, se puede prededucir que tienes un pequeño círculo de amigos muy cercanos y leales, y valoras mucho la lealtad. Eres el ancla \U0001f3cb\ufe0f\u200d\u2642\ufe0f en la vida de las personas que te importan y tu hogar siempre está abierto para ellos. \U0001f3e1\U0001f511\n\n¡Tu viaje es único, Asier, y cada día es otra página en tu propia epopeya! \U0001f305\U0001f320 ¡Sigue brillando!', 'refusal': None}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 881, 'completion_tokens': 666, 'total_tokens': 1547}, 'system_fingerprint': None}
+2024-09-04 03:43:44,576 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:43:44,845 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:43:47,001 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:43:54,220 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:43:54,611 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:44:01,466 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:44:04,658 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:44:07,357 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7005636792:update_fetcher' coro=<Application._update_fetcher() running at C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_application.py:1258> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2024-09-04 03:44:09,409 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getMe "HTTP/1.1 200 OK"
+2024-09-04 03:44:09,443 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/deleteWebhook "HTTP/1.1 200 OK"
+2024-09-04 03:44:09,444 - telegram.ext.Application - INFO - Application started
+2024-09-04 03:44:12,568 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:44:12,741 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:44:14,502 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:44:14,657 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:44:17,509 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:44:17,660 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:44:18,588 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:44:18,756 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:44:19,639 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:44:19,789 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:44:21,588 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:44:21,739 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:44:25,357 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:44:25,357 - __main__ - INFO - Location received: buenos aires
+2024-09-04 03:44:25,357 - __main__ - INFO - Creating astrological chart for asier, 1984-6-16, 22:30, buenos aires, AR
+2024-09-04 03:44:25,357 - root - WARNING - 
+********
+NO GEONAMES USERNAME SET!
+Using the default geonames username is not recommended, please set a custom one!
+You can get one for free here:
+https://www.geonames.org/login
+Keep in mind that the default username is limited to 2000 requests per hour and is shared with everyone else using this library.
+********
+2024-09-04 03:44:25,358 - root - INFO - Fetching timezone/coordinates from geonames
+2024-09-04 03:44:25,389 - root - INFO - SVG Generated Correctly in: C:\Users\asier\asier - Natal Chart.svg
+2024-09-04 03:44:25,597 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:44:28,127 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:44:28,519 - __main__ - ERROR - Error converting or sending PNG file: 'Message' object has no attribute 'bot'
+2024-09-04 03:44:28,687 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:44:28,845 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:44:56,394 - __main__ - INFO - OpenAI API response: {'id': 'chatcmpl-A3ZMLCqJ31tDcXZJcVl4RFJk0KRYr', 'object': 'chat.completion', 'created': 1725414269, 'model': 'gpt-4-0613', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Asier \u2728, tu sol en Géminis revela una personalidad adaptativa llena de curiosidad e interés en el aprendizaje\U0001f4da. Probablemente disfrutas de una diversidad de hobbies que sacan a relucir tu perspectiva inquisitiva y versátil, tal vez te inclines por la lectura, escribir blogs, o puedes tener un don para la música y el arte \U0001f3b5. \n\nTu luna en Acuario muestra una mente futurista, tal vez te atraigan los avances tecnológicos y probablemente te mantengas a la vanguardia con las últimas tendencias y conceptos innovadores\U0001f4f1. Los viajes a sitios poco convencionales también podrían llamarte la atención \U0001f30d.\n\nAhora, echemos un vistazo a la casa IX - la casa de la filosofía, el aprendizaje superior y los viajes largos. Aquí, encontramos a Marte en Escorpio, lo que sugiere que podrías estar trabajando en un entorno que exige determinación, concentración y estrategia \U0001f3af. Podrías ser un excelente investigador, analista o un líder en un campo de alto estrés.\n\nEn cuanto a tu vida amorosa, Venus en Géminis en la casa V señala una personalidad amorosa que valora la comunicación \U0001f495. Probablemente disfrutas de las conversaciones estimulantes y necesitas un compañero que pueda seguir el ritmo de tus pensamientos volátiles. Eres un encanto en las citas, sabiendo exactamente qué decir para mantener a tu pareja hipnotizada.\n\nFinalmente, los planetas en retrogrado en tu carta astral indican la necesidad de enfrentarte a viejos temas. Pueden haber existido eventos en tu historia familiar que necesitan una revisión, o puede que sientas que necesitas superar ciertos asuntos de tu pasado para avanzar en tu vida \U0001f504.\n\nPor último, pero no menos importante, tu ascendente en Acuario y la presencia de Lilith en Piscis en la casa II podrían sugerir una perspectiva única en cuanto a las finanzas \U0001f4b0. Puedes tener ideas non convencionales acerca de cómo invertir o gastar tu dinero, o tal vez te atraiga el mundo de las criptomonedas o los negocios por internet.\n\nRecuerda, Asier, conocer tu carta astral puede ser una herramienta poderosa para la auto-comprensión, pero siempre tienes el libre albedrío para formarte en la persona que deseas ser. ¡Disfruta del viaje! \U0001f30c\u2728', 'refusal': None}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 881, 'completion_tokens': 584, 'total_tokens': 1465}, 'system_fingerprint': None}
+2024-09-04 03:44:56,396 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:44:56,612 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:44:58,779 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:45:06,017 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:45:06,431 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:45:13,260 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:45:16,467 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:45:20,517 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:45:26,503 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:45:27,764 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:45:34,990 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:45:36,542 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:45:42,231 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:45:46,581 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:45:56,622 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:45:59,480 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:46:06,657 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:46:16,696 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:46:26,738 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:46:36,775 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:46:46,812 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:46:56,847 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:47:06,882 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:47:16,916 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:47:27,000 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:47:37,038 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:47:40,276 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:47:40,277 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-09-04 03:47:40,277 - telegram.ext.Application - INFO - Application.stop() complete
+2024-09-04 03:47:43,086 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getMe "HTTP/1.1 200 OK"
+2024-09-04 03:47:43,121 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/deleteWebhook "HTTP/1.1 200 OK"
+2024-09-04 03:47:43,121 - telegram.ext.Application - INFO - Application started
+2024-09-04 03:47:45,474 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:47:45,657 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:47:47,671 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:47:47,834 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:47:53,285 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:47:53,502 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:47:55,482 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:47:55,648 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:47:57,675 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:47:57,844 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:48:00,551 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:48:00,719 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:48:09,474 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:48:09,702 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:48:13,353 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:48:13,354 - __main__ - INFO - Location received: bilbao
+2024-09-04 03:48:13,354 - __main__ - INFO - Creating astrological chart for asier, 1984-6-16, 22:30, bilbao, ES
+2024-09-04 03:48:13,354 - root - WARNING - 
+********
+NO GEONAMES USERNAME SET!
+Using the default geonames username is not recommended, please set a custom one!
+You can get one for free here:
+https://www.geonames.org/login
+Keep in mind that the default username is limited to 2000 requests per hour and is shared with everyone else using this library.
+********
+2024-09-04 03:48:13,354 - root - INFO - Fetching timezone/coordinates from geonames
+2024-09-04 03:48:13,387 - root - INFO - SVG Generated Correctly in: C:\Users\asier\asier - Natal Chart.svg
+2024-09-04 03:48:13,559 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:48:16,093 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:48:16,489 - __main__ - ERROR - Error converting or sending PNG file: 'Message' object has no attribute 'bot'
+2024-09-04 03:48:16,653 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:48:16,806 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:49:00,470 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getMe "HTTP/1.1 200 OK"
+2024-09-04 03:49:00,504 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/deleteWebhook "HTTP/1.1 200 OK"
+2024-09-04 03:49:00,505 - telegram.ext.Application - INFO - Application started
+2024-09-04 03:49:00,601 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:49:00,764 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:49:04,615 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:49:04,769 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:49:07,165 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:49:07,316 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:49:08,413 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:49:08,566 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:49:09,493 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:49:09,646 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:49:14,549 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:49:14,701 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:49:20,077 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:49:20,078 - __main__ - INFO - Location received: bilbao
+2024-09-04 03:49:20,078 - __main__ - INFO - Creating astrological chart for asier, 1984-6-16, 22:30, bilbao, ES
+2024-09-04 03:49:20,078 - root - WARNING - 
+********
+NO GEONAMES USERNAME SET!
+Using the default geonames username is not recommended, please set a custom one!
+You can get one for free here:
+https://www.geonames.org/login
+Keep in mind that the default username is limited to 2000 requests per hour and is shared with everyone else using this library.
+********
+2024-09-04 03:49:20,078 - root - INFO - Fetching timezone/coordinates from geonames
+2024-09-04 03:49:20,112 - root - INFO - SVG Generated Correctly in: C:\Users\asier\asier - Natal Chart.svg
+2024-09-04 03:49:20,334 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:49:22,915 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:49:23,320 - __main__ - ERROR - Error converting or sending PNG file: 'Message' object has no attribute 'bot'
+2024-09-04 03:49:23,471 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:49:23,622 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:49:53,868 - __main__ - INFO - OpenAI API response: {'id': 'chatcmpl-A3ZR6jyyAfzdLCX9EyabSIHWaalPx', 'object': 'chat.completion', 'created': 1725414564, 'model': 'gpt-4-0613', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Asier, llevas el sol en Géminis \u2600\ufe0f, lo que te dota de una curiosidad insaciable. Probablemente te encanta sumergirte en nuevos intereses y hobbies: quizás la lectura, los rompecabezas o incluso aprender idiomas. Tu sol se encuentra en la sexta casa, lo que también indica un enfoque en la salud y el bienestar: puede que te guste el senderismo, el yoga o la cocina saludable. \U0001f9d7\u200d\u2642\ufe0f\U0001f4aa\n\nCon tu luna en Acuario y en la primera casa \U0001f319, eres alguien que valora tu libertad y la originalidad. Podría indicar que tienes un rasgo rebelde y que te gusta desafiar la norma. En la familia, puedes ser el que siempre propone ideas innovadoras o divertidas para las reuniones o escapadas familiares. \U0001f3e1\U0001f388 \n\nTu Mercurio y Venus ambos en Géminis en la sexta casa revelan que te comunicas de manera lógica y directa, pero también con una gran cantidad de encanto \U0001f4ac\U0001f498. Es probable que seas muy valorado en tu trabajo por estas habilidades, especialmente si trabajas en una industria que requiere un pensamiento analítico ágil, como la tecnología o el periodismo. Tus colegas pueden recibir con agrado tu liderazgo suave y persuasivo. \U0001f469\u200d\U0001f4bb\U0001f5de\ufe0f.\n\nMarte retrógrado en Escorpio en la décima casa sugiere una pasión intensa y un enfoque feroz en tus objetivos laborales. Puedes tener una resistencia inigualable y un deseo de escalar a la cima \U0001f3cb\ufe0f\u200d\u2642\ufe0f\U0001f304. Con Saturno retrógrado en Escorpio aquí también, aunque puede que a veces enfrentes obstáculos, eres el tipo de persona que nunca pone excusas, sino que te levantas y trabajas aún más duro.\n\nAsier, en el amor, tu carta sugiere que valoras las conexiones mentales. Alguien que pueda mantenerte involucrado con conversaciones inteligentes y perspicaces "ganará" tu corazón \u2764\ufe0f\u2728. Puedes encontrar bello el acto de aprender de tu pareja y crecer juntos en sabiduría. \U0001f574\ufe0f\u200d\u2640\ufe0f\U0001f4d8.\n\nEspero que esta interpretación se resuene contigo y te dé una visión útil de tu vida, Asier. Recuerda, las estrellas nos guían pero somos nosotros quienes dibujamos nuestro camino. \U0001f31f\U0001f6e4\ufe0f.', 'refusal': None}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 881, 'completion_tokens': 592, 'total_tokens': 1473}, 'system_fingerprint': None}
+2024-09-04 03:49:53,869 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:49:54,118 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:49:56,274 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:50:03,507 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:50:03,905 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:50:10,734 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:50:13,939 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:50:30,532 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getMe "HTTP/1.1 200 OK"
+2024-09-04 03:50:30,565 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/deleteWebhook "HTTP/1.1 200 OK"
+2024-09-04 03:50:30,566 - telegram.ext.Application - INFO - Application started
+2024-09-04 03:50:33,372 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:50:33,537 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:50:36,400 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:50:36,560 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:50:38,596 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:50:38,759 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:50:40,561 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:50:40,723 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:50:42,413 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:50:42,577 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:50:46,273 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:50:46,426 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:50:56,300 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:50:56,300 - __main__ - INFO - Location received: buenos aires
+2024-09-04 03:50:56,300 - __main__ - INFO - Creating astrological chart for asier, 1984-6-16, 22:30, buenos aires, AR
+2024-09-04 03:50:56,300 - root - WARNING - 
+********
+NO GEONAMES USERNAME SET!
+Using the default geonames username is not recommended, please set a custom one!
+You can get one for free here:
+https://www.geonames.org/login
+Keep in mind that the default username is limited to 2000 requests per hour and is shared with everyone else using this library.
+********
+2024-09-04 03:50:56,300 - root - INFO - Fetching timezone/coordinates from geonames
+2024-09-04 03:50:56,333 - root - INFO - SVG Generated Correctly in: C:\Users\asier\asier - Natal Chart.svg
+2024-09-04 03:50:56,587 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:50:59,235 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:50:59,626 - __main__ - ERROR - Error converting or sending PNG file: 'Message' object has no attribute 'bot'
+2024-09-04 03:50:59,781 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:50:59,947 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:51:27,666 - __main__ - INFO - OpenAI API response: {'id': 'chatcmpl-A3ZSeRxSBpbynBCdTGjFEF2mrIasR', 'object': 'chat.completion', 'created': 1725414660, 'model': 'gpt-4-0613', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Asier, \U0001f386 tu vida está llena de energía, dada tu fuerte presencia de Géminis en tu carta astral, lo que te vuelve comunicativo, curioso e inteligente. \U0001f4da Probablemente te encanta leer, escribes bastante, y quizá hasta tengas un blog en el que compartes tus pensamientos más profundos. \n\nTienes un intriga especial hacia el mundo que te rodea y estás siempre explorando nuevas formas de pensar. La ciencia, la filosofía, o incluso el ocultismo pueden ser cosas que te interesan especialmente. \U0001f300\n\nAl tener tu Venus en Géminis, es probable que adores comunicarte en tus relaciones. \U0001f60d Necesitas un compañero que disfrute de largas conversaciones, debates intelectuales y que pueda mantenerse al día con tus cambiantes intereses. Tu ser amado debe estar en el mismo nivel espiritual y emocional que tú para ganarse tu corazón por completo.\n\nTu Sol y Venus en la quinta casa indica que te encanta disfrutar de la vida. \U0001f483 Podría inclinarse hacia actividades creativas, como escritura, música, pintura o cualquier forma de expresión artística. La diversión y la alegría son componentes críticos de tu vida.\n\nEn cuanto al trabajo, con Júpiter en Capricornio en la casa once, quizá seas muy ambicioso y es probable que estés construyendo una carrera sólida en el mundo profesional. \U0001f454 Trabajas duro y con constancia, buscando siempre crecer y destacar en tu campo.\n\nCon la Luna en Acuario en la duodécima casa, eres una persona emocionalmente intuitiva y puedes percibir las emociones y necesidades de los demás antes de que se expresen verbalmente.\U0001f52e Este don también se invierte hacia ti, dándote una intuición innata sobre tus propias necesidades emocionales.\n\nEn cuestión de familia, tienes una visión única de la vida y una necesidad fuerte de libertad que puede llevar a cierta distancia de tus raíces. Sin embargo, si te permites volver de vez en cuando, descubrirás que tu familia tenia más entendimiento y comprensión de lo que recordabas. \U0001f3e1\n\nEn general, Asier, tu carta astral revela una vida llena de cambios constantes en búsqueda de sabiduría y comprensión. Te animo a seguir tu curiosidad innata, abraza tu amor por la comunicación y sigue creciendo! \U0001f331\U0001f31f', 'refusal': None}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 881, 'completion_tokens': 574, 'total_tokens': 1455}, 'system_fingerprint': None}
+2024-09-04 03:51:27,668 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:51:27,892 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:51:30,058 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:51:37,308 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:51:37,702 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:51:44,575 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:51:47,737 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:51:51,892 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:51:57,771 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:51:59,155 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:52:06,378 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:52:07,805 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:52:13,639 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:52:17,850 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:52:20,878 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:52:27,884 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:52:37,937 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:52:37,938 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-09-04 03:52:55,281 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getMe "HTTP/1.1 200 OK"
+2024-09-04 03:52:55,314 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/deleteWebhook "HTTP/1.1 200 OK"
+2024-09-04 03:52:55,315 - telegram.ext.Application - INFO - Application started
+2024-09-04 03:53:01,195 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:53:01,413 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:53:09,558 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:53:09,786 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:53:12,190 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:53:12,343 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:53:13,510 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:53:13,675 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:53:14,845 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:53:15,017 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:53:17,425 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:53:17,612 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:53:21,106 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:53:21,107 - __main__ - INFO - Location received: bilbao
+2024-09-04 03:53:21,107 - __main__ - INFO - Creating astrological chart for asier, 1984-6-16, 22:30, bilbao, ES
+2024-09-04 03:53:21,107 - root - WARNING - 
+********
+NO GEONAMES USERNAME SET!
+Using the default geonames username is not recommended, please set a custom one!
+You can get one for free here:
+https://www.geonames.org/login
+Keep in mind that the default username is limited to 2000 requests per hour and is shared with everyone else using this library.
+********
+2024-09-04 03:53:21,107 - root - INFO - Fetching timezone/coordinates from geonames
+2024-09-04 03:53:21,139 - root - INFO - SVG Generated Correctly in: C:\Users\asier\asier - Natal Chart.svg
+2024-09-04 03:53:21,303 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:53:23,907 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:53:25,418 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:53:25,579 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:53:44,042 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:53:44,124 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:53:44,124 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-09-04 03:53:44,124 - telegram.ext.Application - CRITICAL - Fetching updates was aborted due to KeyboardInterrupt(). Suppressing exception to ensure graceful shutdown.
+Traceback (most recent call last):
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_application.py", line 687, in stop
+    self.__update_fetcher_task.result()
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_application.py", line 1258, in _update_fetcher
+    await self.__update_fetcher()
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_application.py", line 1254, in __update_fetcher
+    await self.__process_update_wrapper(update)
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_application.py", line 1269, in __process_update_wrapper
+    await self._update_processor.process_update(update, self.process_update(update))
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_baseupdateprocessor.py", line 153, in process_update
+    await self.do_process_update(update, coroutine)
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_baseupdateprocessor.py", line 178, in do_process_update
+    await coroutine
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_application.py", line 1335, in process_update
+    await coroutine
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_handlers\conversationhandler.py", line 857, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 157, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\asier\AstroBot\run.py", line 361, in location
+    prediction = get_astrological_prediction(context.user_data["name"], context.user_data["location"], chart)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\asier\AstroBot\run.py", line 207, in get_astrological_prediction
+    response = requests.post(endpoint, headers=headers, json=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\http\client.py", line 1395, in getresponse
+    response.begin()
+  File "C:\Users\asier\AstroBot\.conda\Lib\http\client.py", line 325, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\http\client.py", line 286, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\ssl.py", line 1314, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asier\AstroBot\.conda\Lib\ssl.py", line 1166, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-09-04 03:53:44,149 - telegram.ext.Application - INFO - Application.stop() complete
+2024-09-04 03:53:47,549 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getMe "HTTP/1.1 200 OK"
+2024-09-04 03:53:47,583 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/deleteWebhook "HTTP/1.1 200 OK"
+2024-09-04 03:53:47,583 - telegram.ext.Application - INFO - Application started
+2024-09-04 03:53:57,692 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:54:07,725 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:54:17,760 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:54:27,795 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:54:36,378 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:54:36,616 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:54:42,687 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:54:42,929 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:54:45,714 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:54:45,882 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:54:48,664 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:54:48,825 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:54:50,906 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:54:51,069 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:54:53,830 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:54:53,997 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:54:57,313 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:54:57,313 - __main__ - INFO - Location received: barakaldo
+2024-09-04 03:54:57,480 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:55:00,064 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:55:00,065 - __main__ - INFO - Creating astrological chart for asier, 1984-6-16, 22:30, barakaldo, ES
+2024-09-04 03:55:00,065 - root - WARNING - 
+********
+NO GEONAMES USERNAME SET!
+Using the default geonames username is not recommended, please set a custom one!
+You can get one for free here:
+https://www.geonames.org/login
+Keep in mind that the default username is limited to 2000 requests per hour and is shared with everyone else using this library.
+********
+2024-09-04 03:55:00,065 - root - INFO - Fetching timezone/coordinates from geonames
+2024-09-04 03:55:00,314 - root - INFO - SVG Generated Correctly in: C:\Users\asier\asier - Natal Chart.svg
+2024-09-04 03:55:00,486 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:55:03,099 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:55:04,667 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:55:04,833 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:55:16,417 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getMe "HTTP/1.1 200 OK"
+2024-09-04 03:55:16,451 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/deleteWebhook "HTTP/1.1 200 OK"
+2024-09-04 03:55:16,452 - telegram.ext.Application - INFO - Application started
+2024-09-04 03:55:21,034 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:55:21,205 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:55:24,075 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:55:24,243 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:55:28,574 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:55:28,739 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:55:30,507 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:55:30,672 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:55:31,881 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:55:32,079 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:55:35,106 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:55:35,266 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:55:42,970 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:55:42,971 - __main__ - INFO - Location received: barakaldo
+2024-09-04 03:55:43,231 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:55:45,528 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:55:45,529 - __main__ - INFO - Creating astrological chart for asier, 1984-6-16, 22:30, barakaldo, ES
+2024-09-04 03:55:45,529 - root - WARNING - 
+********
+NO GEONAMES USERNAME SET!
+Using the default geonames username is not recommended, please set a custom one!
+You can get one for free here:
+https://www.geonames.org/login
+Keep in mind that the default username is limited to 2000 requests per hour and is shared with everyone else using this library.
+********
+2024-09-04 03:55:45,529 - root - INFO - Fetching timezone/coordinates from geonames
+2024-09-04 03:55:45,562 - root - INFO - SVG Generated Correctly in: C:\Users\asier\asier - Natal Chart.svg
+2024-09-04 03:55:45,733 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:55:48,295 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:55:49,792 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 03:55:49,960 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:56:15,051 - __main__ - INFO - OpenAI API response: {'id': 'chatcmpl-A3ZXKPohVlRj0D9gS5MwHaVLnwNBY', 'object': 'chat.completion', 'created': 1725414950, 'model': 'gpt-4-0613', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Asier, tu vida es pura orquesta, con cada planeta tocando una melodía única y especial, solo para ti. \U0001f3b5\U0001f30c\n\nVeamos, con el astro rey, el Sol, en Géminis y en tu sexta casa, eres alguien que se siente energizado con la actividad mental y el enriquecimiento de conocimientos. Podría apostar que te encanta leer \U0001f4da, quizás cómo funcionan las cosas, tecnología o ciencia ficción. Eres curioso y adaptable, disfrutando de la variedad en tu trabajo y hobbies. La rutina y el aburrimiento no tienen lugar en tu cotidianidad.\n\nA la luna le gusta el aire frío de Acuario en tu primera casa, por lo que tiendes a ser emocionalmente independiente. Esta configuración puede sugerir que valoras mucho tu libertad personal y que buscas constantemente nuevas experiencias. \U0001f52d\U0001f680 \n\nBajo la influencia de Mercurio y Venus, ambos en Géminis en tu sexta casa, tu carácter es sumamente adaptable y sociable, por lo que eres genial para las relaciones interpersonales. Comunicas tus sentimientos con facilidad y a veces te gusta ser el centro de las fiestas \U0001f973. En el amor, te atraen las personas inteligentes, con las que puedas tener una conversación interesante.\n\nMarte en Escorpio en tu décima casa indica que tienes una voluntad de hierro y una determinación indomable cuando se trata de tu carrera. No te das por vencido fácilmente y trabajas duro para alcanzar tus objetivos. Eres intenso y apasionado en tu trabajo, y tu maravillosa capacidad de concentración puede llevarte lejos. \U0001f4c8\U0001f525\n\nAh, y dado tu origen de Barakaldo, bien podrías tener una afinidad innata con el fútbol. Tal vez incluso disfrutes de los partidos entre amigos los fines de semana. \U0001f3df\ufe0f\u26bd\n\nEl hecho de que tu Júpiter y Saturno estén en retroceso, aquello que aprecias y valoras puede que sea diferente a lo que usualmente adora la mayoría de la gente de tu generación. Literalmente, caminas al ritmo de tu propio tambor. \U0001f4ab\U0001f941\n\nRecuerda, Asier, el universo está constantemente danzando alrededor tuyo, siempre cambiante y siempre misterioso. ¡Abraza el maravilloso viaje que es la vida y sigue persiguiendo tus sueños! \u2728\U0001f680\n', 'refusal': None}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 883, 'completion_tokens': 583, 'total_tokens': 1466}, 'system_fingerprint': None}
+2024-09-04 03:56:15,052 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:56:15,283 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:56:17,490 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:56:24,722 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:56:25,088 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:56:31,974 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:56:35,128 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:56:39,206 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:56:45,163 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:56:46,441 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:56:53,691 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:56:55,203 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:57:00,937 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:57:05,249 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:57:08,181 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:57:15,295 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:57:25,349 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:57:25,395 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 03:57:35,391 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 03:57:45,433 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"

@@ -50,6 +50,102 @@ def validate_time(time_str):
     except ValueError:
         return None, None
 
+def replace_css_variables(svg_content):
+    css_variables = {
+        '--kerykeion-color-black': '#000000',
+        '--kerykeion-color-white': '#ffffff',
+        '--kerykeion-color-neutral-content': '#c8cbd0',
+        '--kerykeion-color-base-content': '#ccd0d4',
+        '--kerykeion-color-primary': '#38bdf8',
+        '--kerykeion-color-secondary': '#818cf8',
+        '--kerykeion-color-accent': '#f471b5',
+        '--kerykeion-color-neutral': '#1e293b',
+        '--kerykeion-color-base-100': '#0f172a',
+        '--kerykeion-color-info': '#0ca5e9',
+        '--kerykeion-color-info-content': '#000000',
+        '--kerykeion-color-success': '#2dd4bf',
+        '--kerykeion-color-warning': '#f4bf50',
+        '--kerykeion-color-error': '#fb7085',
+        '--kerykeion-color-base-200': '#0a1020',
+        '--kerykeion-color-base-300': '#171f2c',
+        '--kerykeion-chart-color-paper-0': '#c8cbd0',
+        '--kerykeion-chart-color-paper-1': '#0f172a',
+        '--kerykeion-chart-color-zodiac-bg-0': '#0a1020',
+        '--kerykeion-chart-color-zodiac-bg-1': '#171f2c',
+        '--kerykeion-chart-color-zodiac-bg-2': '#0a1020',
+        '--kerykeion-chart-color-zodiac-bg-3': '#171f2c',
+        '--kerykeion-chart-color-zodiac-bg-4': '#0a1020',
+        '--kerykeion-chart-color-zodiac-bg-5': '#171f2c',
+        '--kerykeion-chart-color-zodiac-bg-6': '#0a1020',
+        '--kerykeion-chart-color-zodiac-bg-7': '#171f2c',
+        '--kerykeion-chart-color-zodiac-bg-8': '#0a1020',
+        '--kerykeion-chart-color-zodiac-bg-9': '#171f2c',
+        '--kerykeion-chart-color-zodiac-bg-10': '#0a1020',
+        '--kerykeion-chart-color-zodiac-bg-11': '#171f2c',
+        '--kerykeion-chart-color-zodiac-radix-ring-0': '#1e293b',
+        '--kerykeion-chart-color-zodiac-radix-ring-1': '#1e293b',
+        '--kerykeion-chart-color-zodiac-radix-ring-2': '#1e293b',
+        '--kerykeion-chart-color-zodiac-transit-ring-0': '#1e293b',
+        '--kerykeion-chart-color-zodiac-transit-ring-1': '#1e293b',
+        '--kerykeion-chart-color-zodiac-transit-ring-2': '#1e293b',
+        '--kerykeion-chart-color-zodiac-transit-ring-3': '#1e293b',
+        '--kerykeion-chart-color-houses-radix-line': '#ccd0d4',
+        '--kerykeion-chart-color-houses-transit-line': '#ccd0d4',
+        '--kerykeion-chart-color-conjunction': '#2dd4bf',
+        '--kerykeion-chart-color-semi-sextile': '#2dd4bf',
+        '--kerykeion-chart-color-semi-square': '#fb7085',
+        '--kerykeion-chart-color-sextile': '#2dd4bf',
+        '--kerykeion-chart-color-quintile': '#818cf8',
+        '--kerykeion-chart-color-square': '#fb7085',
+        '--kerykeion-chart-color-trine': '#2dd4bf',
+        '--kerykeion-chart-color-sesquiquadrate': '#fb7085',
+        '--kerykeion-chart-color-biquintile': '#818cf8',
+        '--kerykeion-chart-color-quincunx': '#818cf8',
+        '--kerykeion-chart-color-opposition': '#fb7085',
+        '--kerykeion-chart-color-sun': '#f4bf50',
+        '--kerykeion-chart-color-moon': '#818cf8',
+        '--kerykeion-chart-color-mercury': '#38bdf8',
+        '--kerykeion-chart-color-venus': '#f471b5',
+        '--kerykeion-chart-color-mars': '#f4bf50',
+        '--kerykeion-chart-color-jupiter': '#38bdf8',
+        '--kerykeion-chart-color-saturn': '#818cf8',
+        '--kerykeion-chart-color-uranus': '#f471b5',
+        '--kerykeion-chart-color-neptune': '#38bdf8',
+        '--kerykeion-chart-color-pluto': '#818cf8',
+        '--kerykeion-chart-color-mean-node': '#f4bf50',
+        '--kerykeion-chart-color-true-node': '#f4bf50',
+        '--kerykeion-chart-color-chiron': '#818cf8',
+        '--kerykeion-chart-color-first-house': '#f4bf50',
+        '--kerykeion-chart-color-tenth-house': '#f4bf50',
+        '--kerykeion-chart-color-seventh-house': '#f4bf50',
+        '--kerykeion-chart-color-fourth-house': '#f4bf50',
+        '--kerykeion-chart-color-mean-lilith': '#818cf8',
+        '--kerykeion-chart-color-zodiac-icon-0': '#f471b5',
+        '--kerykeion-chart-color-zodiac-icon-1': '#f4bf50',
+        '--kerykeion-chart-color-zodiac-icon-2': '#38bdf8',
+        '--kerykeion-chart-color-zodiac-icon-3': '#818cf8',
+        '--kerykeion-chart-color-zodiac-icon-4': '#f471b5',
+        '--kerykeion-chart-color-zodiac-icon-5': '#f4bf50',
+        '--kerykeion-chart-color-zodiac-icon-6': '#38bdf8',
+        '--kerykeion-chart-color-zodiac-icon-7': '#818cf8',
+        '--kerykeion-chart-color-zodiac-icon-8': '#f471b5',
+        '--kerykeion-chart-color-zodiac-icon-9': '#f4bf50',
+        '--kerykeion-chart-color-zodiac-icon-10': '#38bdf8',
+        '--kerykeion-chart-color-zodiac-icon-11': '#818cf8',
+        '--kerykeion-chart-color-air-percentage': '#38bdf8',
+        '--kerykeion-chart-color-earth-percentage': '#f4bf50',
+        '--kerykeion-chart-color-fire-percentage': '#f471b5',
+        '--kerykeion-chart-color-water-percentage': '#818cf8',
+        '--kerykeion-chart-color-lunar-phase-0': '#000000',
+        '--kerykeion-chart-color-lunar-phase-1': '#ffffff',
+        '--kerykeion-chart-color-house-number': '#ccd0d4'
+    }
+
+    for var, value in css_variables.items():
+        svg_content = svg_content.replace(f"var({var})", value)
+    
+    return svg_content
+
 def create_astrological_chart(name, year, month, day, hour, minute, location, country_code):
     try:
         logger.info(f"Creating astrological chart for {name}, {year}-{month}-{day}, {hour}:{minute}, {location}, {country_code}")
@@ -230,16 +326,38 @@ async def location(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
                     svg_path = os.path.join(home_dir, svg_files[0])
                     png_path = svg_path.replace('.svg', '.png')
                     
-                    # Convert SVG to PNG
-                    cairosvg.svg2png(url=svg_path, write_to=png_path)
+                    # Read SVG content and replace CSS variables
+                    with open(svg_path, 'r') as svg_file:
+                        svg_content = svg_file.read()
+                    svg_content = replace_css_variables(svg_content)
+                    with open(svg_path, 'w') as svg_file:
+                        svg_file.write(svg_content)
                     
-                    # Send PNG file
-                    with open(png_path, 'rb') as png_file:
-                        await update.message.reply_document(InputFile(png_file))
+                    # Try to send SVG file
+                    """
+                    try:
+                        with open(svg_path, 'rb') as svg_file:
+                            await update.message.reply_document(InputFile(svg_file))
+                    except Exception as e:
+                        logger.error(f"Error sending SVG file: {e}")
+                        await update.message.reply_text("⚠️ Hubo un problema al enviar tu carta astral en formato SVG.")
+                    """
+                    
+                    # Try to convert and send PNG file
+                    try:
+                        cairosvg.svg2png(url=svg_path, write_to=png_path, scale=4.0)  # Increase resolution by 4 times
+                        with open(png_path, 'rb') as png_file:
+                            await update.message.reply_document(InputFile(png_file))
+                    except Exception as e:
+                        logger.error(f"Error converting or sending PNG file: {e}")
+                        await update.message.reply_text("⚠️ Hubo un problema al convertir o enviar tu carta astral en formato PNG.")
                     
                     # Remove both SVG and PNG files
-                    #os.remove(svg_path)
-                    #os.remove(png_path)
+                    try:
+                        os.remove(svg_path)
+                        os.remove(png_path)
+                    except Exception as e:
+                        logger.error(f"Error removing files: {e}")
                 
                 await update.message.reply_text("🔮 Dame un momento mientras consulto las estrellas y tejo tu predicción...")
                 prediction = get_astrological_prediction(context.user_data["name"], context.user_data["location"], chart)
@@ -251,10 +369,10 @@ async def location(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
                 for paragraph in prediction_paragraphs:
                     if paragraph.strip():  # Only send non-empty paragraphs
                         await update.message.reply_text(paragraph)
-                        await asyncio.sleep(7)  # 7-second pause between paragraphs
+                        await asyncio.sleep(5)  # 5-second pause between paragraphs
 
                 log_user_interaction(context)  # Log the user interaction
-                await asyncio.sleep(10)  # 10-second pause before asking if they want to continue
+                await asyncio.sleep(8)  # 8-second pause before asking if they want to continue
                 await update.message.reply_text(
                     '🌟 ¡Espero que mis palabras resuenen contigo! ¿Te gustaría seguir preguntando sobre otras almas que deseas conocer más?'
                 )
@@ -302,16 +420,37 @@ async def country_code(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
                     svg_path = os.path.join(home_dir, svg_files[0])
                     png_path = svg_path.replace('.svg', '.png')
                     
-                    # Convert SVG to PNG
-                    cairosvg.svg2png(url=svg_path, write_to=png_path)
+                    # Read SVG content and replace CSS variables
+                    with open(svg_path, 'r') as svg_file:
+                        svg_content = svg_file.read()
+                    svg_content = replace_css_variables(svg_content)
+                    with open(svg_path, 'w') as svg_file:
+                        svg_file.write(svg_content)
                     
-                    # Send PNG file
-                    with open(png_path, 'rb') as png_file:
-                        await update.message.reply_document(InputFile(png_file))
+                    # Try to send SVG file
+                    """
+                    try:
+                        with open(svg_path, 'rb') as svg_file:
+                            await update.message.reply_document(InputFile(svg_file))
+                    except Exception as e:
+                        logger.error(f"Error sending SVG file: {e}")
+                        await update.message.reply_text("⚠️ Hubo un problema al enviar tu carta astral en formato SVG.")
+                    """
+                    
+                    try:
+                        cairosvg.svg2png(url=svg_path, write_to=png_path, scale=4.0)  # Increase resolution by 4 times
+                        with open(png_path, 'rb') as png_file:
+                            await update.message.reply_document(InputFile(png_file))
+                    except Exception as e:
+                        logger.error(f"Error converting or sending PNG file: {e}")
+                        await update.message.reply_text("⚠️ Hubo un problema al convertir o enviar tu carta astral en formato PNG.")
                     
                     # Remove both SVG and PNG files
-                    os.remove(svg_path)
-                    os.remove(png_path)
+                    try:
+                        os.remove(svg_path)
+                        os.remove(png_path)
+                    except Exception as e:
+                        logger.error(f"Error removing files: {e}")
                 
                 await update.message.reply_text("🔮 Dame un momento mientras consulto las estrellas y tejo tu predicción...")
                 prediction = get_astrological_prediction(context.user_data["name"], context.user_data["location"], chart)
@@ -323,10 +462,10 @@ async def country_code(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
                 for paragraph in prediction_paragraphs:
                     if paragraph.strip():  # Only send non-empty paragraphs
                         await update.message.reply_text(paragraph)
-                        await asyncio.sleep(7)  # 7-second pause between paragraphs
+                        await asyncio.sleep(5)  # 5-second pause between paragraphs
 
                 log_user_interaction(context)  # Log the user interaction
-                await asyncio.sleep(10)  # 10-second pause before asking if they want to continue
+                await asyncio.sleep(8)  # 8-second pause before asking if they want to continue
                 await update.message.reply_text(
                     '🌟 ¡Espero que mis palabras resuenen contigo! ¿Te gustaría seguir preguntando sobre otras almas que deseas conocer más?'
                 )
@@ -345,6 +484,7 @@ async def country_code(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
     else:
         await update.message.reply_text("🌍 Ese código de país no parece válido. Por favor, introduce las dos letras que indican tu país (por ejemplo, ES para España, AR para Argentina).")
         return COUNTRY_CODE
+
 
 async def repeat(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     response = update.message.text
