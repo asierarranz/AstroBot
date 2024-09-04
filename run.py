@@ -1,11 +1,14 @@
 #!/usr/bin/env python
+import os
+from dotenv import load_dotenv
 import logging
 from telegram import Update, ReplyKeyboardRemove, ReplyKeyboardMarkup, InputFile
 from telegram.ext import Application, CommandHandler, ConversationHandler, MessageHandler, filters, ContextTypes
 from kerykeion import Report, AstrologicalSubject, KerykeionChartSVG
-import requests, asyncio, unicodedata, os, time
-import os
-from dotenv import load_dotenv
+import requests, asyncio, unicodedata, time
+import cairosvg
+
+# Load environment variables
 load_dotenv()
 
 # Enable logging to a file
@@ -17,8 +20,8 @@ logger = logging.getLogger(__name__)
 (NAME, YEAR, MONTH, DAY, TIME, LOCATION, COUNTRY_CODE, RESULT, REPEAT) = range(9)
 
 # API keys
-telegram_token = os.getenv('TELEGRAM_TOKEN')
-openai_api_key = os.getenv('OPENAI_API_KEY')
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Arrays of main cities
 ARGENTINA_CITIES = ["buenos aires", "cordoba", "rosario", "mendoza", "la plata", "san miguel de tucuman", "mar del plata", "salta", "santa fe", "san juan"]
@@ -225,9 +228,18 @@ async def location(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
                 svg_files = [f for f in os.listdir(home_dir) if f.endswith('.svg')]
                 if svg_files:
                     svg_path = os.path.join(home_dir, svg_files[0])
-                    with open(svg_path, 'rb') as svg_file:
-                        await update.message.reply_document(InputFile(svg_file))
-                    os.remove(svg_path)  # Remove the SVG file after sending
+                    png_path = svg_path.replace('.svg', '.png')
+                    
+                    # Convert SVG to PNG
+                    cairosvg.svg2png(url=svg_path, write_to=png_path)
+                    
+                    # Send PNG file
+                    with open(png_path, 'rb') as png_file:
+                        await update.message.reply_document(InputFile(png_file))
+                    
+                    # Remove both SVG and PNG files
+                    os.remove(svg_path)
+                    os.remove(png_path)
                 
                 await update.message.reply_text("🔮 Dame un momento mientras consulto las estrellas y tejo tu predicción...")
                 prediction = get_astrological_prediction(context.user_data["name"], context.user_data["location"], chart)
@@ -288,9 +300,18 @@ async def country_code(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
                 svg_files = [f for f in os.listdir(home_dir) if f.endswith('.svg')]
                 if svg_files:
                     svg_path = os.path.join(home_dir, svg_files[0])
-                    with open(svg_path, 'rb') as svg_file:
-                        await update.message.reply_document(InputFile(svg_file))
-                    os.remove(svg_path)  # Remove the SVG file after sending
+                    png_path = svg_path.replace('.svg', '.png')
+                    
+                    # Convert SVG to PNG
+                    cairosvg.svg2png(url=svg_path, write_to=png_path)
+                    
+                    # Send PNG file
+                    with open(png_path, 'rb') as png_file:
+                        await update.message.reply_document(InputFile(png_file))
+                    
+                    # Remove both SVG and PNG files
+                    os.remove(svg_path)
+                    os.remove(png_path)
                 
                 await update.message.reply_text("🔮 Dame un momento mientras consulto las estrellas y tejo tu predicción...")
                 prediction = get_astrological_prediction(context.user_data["name"], context.user_data["location"], chart)
