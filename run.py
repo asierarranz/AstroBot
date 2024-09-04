@@ -287,6 +287,84 @@ async def time(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         await update.message.reply_text("⌛ Asegúrate de usar el formato correcto HH:MM.")
         return TIME
 
+async def generate_chart_and_prediction(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    try:
+        chart = create_astrological_chart(
+            context.user_data["name"],
+            context.user_data["year"],
+            context.user_data["month"],
+            context.user_data["day"],
+            context.user_data["hour"],
+            context.user_data["minute"],
+            context.user_data["location"],
+            context.user_data["country_code"]
+        )
+        if chart:
+            await update.message.reply_text(f"🌌 ¡Aquí está tu carta astral, revelada a mis ojos!\n{chart}")
+            
+            # Wait for the SVG file to be created
+            await asyncio.sleep(2)
+            
+            # Find and send the SVG file
+            home_dir = os.path.expanduser("~")
+            svg_files = [f for f in os.listdir(home_dir) if f.endswith('.svg')]
+            if svg_files:
+                svg_path = os.path.join(home_dir, svg_files[0])
+                png_path = svg_path.replace('.svg', '.png')
+                
+                # Read SVG content and replace CSS variables
+                with open(svg_path, 'r') as svg_file:
+                    svg_content = svg_file.read()
+                svg_content = replace_css_variables(svg_content)
+                with open(svg_path, 'w') as svg_file:
+                    svg_file.write(svg_content)
+                
+                # Try to convert and send PNG file
+                try:
+                    cairosvg.svg2png(url=svg_path, write_to=png_path, scale=4.0)  # Increase resolution by 4 times
+                    with open(png_path, 'rb') as png_file:
+                        await update.message.reply_document(InputFile(png_file))
+                except Exception as e:
+                    logger.error(f"Error converting or sending PNG file: {e}")
+                    await update.message.reply_text("⚠️ Hubo un problema al convertir o enviar tu carta astral en formato PNG.")
+                
+                # Remove both SVG and PNG files
+                try:
+                    os.remove(svg_path)
+                    os.remove(png_path)
+                except Exception as e:
+                    logger.error(f"Error removing files: {e}")
+            
+            await update.message.reply_text("🔮 Dame un momento mientras consulto las estrellas y tejo tu predicción...")
+            prediction = get_astrological_prediction(context.user_data["name"], context.user_data["location"], chart)
+            
+            await update.message.reply_text("⭐ Con las estrellas como testigo, aquí está tu predicción:")
+            await asyncio.sleep(2)  # 2-second pause for suspense
+
+            prediction_paragraphs = prediction.split('\n')
+            for paragraph in prediction_paragraphs:
+                if paragraph.strip():  # Only send non-empty paragraphs
+                    await update.message.reply_text(paragraph)
+                    await asyncio.sleep(5)  # 5-second pause between paragraphs
+
+            log_user_interaction(context)  # Log the user interaction
+            await asyncio.sleep(8)  # 8-second pause before asking if they want to continue
+            await update.message.reply_text(
+                '🌟 ¡Espero que mis palabras resuenen contigo! ¿Te gustaría seguir preguntando sobre otras almas que deseas conocer más?'
+            )
+            return REPEAT
+        else:
+            error_message = f"Error generating chart for: {context.user_data}"
+            print(error_message)  # Debug print
+            await update.message.reply_text(f"⚠️ Hubo un error al generar tu carta astral. Detalles: {error_message}")
+            return ConversationHandler.END
+    except Exception as e:
+        error_message = f"Exception occurred: {str(e)}\nUser data: {context.user_data}"
+        print(error_message)  # Debug print
+        logger.error(error_message)
+        await update.message.reply_text(f"⚠️ Hubo un error al generar tu carta astral. Detalles: {error_message}")
+        return ConversationHandler.END
+
 async def location(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     location = normalize_string(update.message.text.strip())
     if len(location) <= 50:
@@ -294,100 +372,14 @@ async def location(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         logger.info(f"Location received: {location}")
         
         if location in ARGENTINA_CITIES:
-            country_code = "AR"
+            context.user_data["country_code"] = "AR"
         elif location in SPAIN_CITIES:
-            country_code = "ES"
+            context.user_data["country_code"] = "ES"
         else:
             await update.message.reply_text("🌍 No he encontrado tu ciudad en mi base de datos. Por favor, introduce las dos letras que indican tu país (por ejemplo, ES para España, AR para Argentina).")
             return COUNTRY_CODE
         
-        context.user_data["country_code"] = country_code
-        try:
-            chart = create_astrological_chart(
-                context.user_data["name"],
-                context.user_data["year"],
-                context.user_data["month"],
-                context.user_data["day"],
-                context.user_data["hour"],
-                context.user_data["minute"],
-                context.user_data["location"],
-                context.user_data["country_code"]
-            )
-            if chart:
-                await update.message.reply_text(f"🌌 ¡Aquí está tu carta astral, revelada a mis ojos!\n{chart}")
-                
-                # Wait for the SVG file to be created
-                await asyncio.sleep(2)
-                
-                # Find and send the SVG file
-                home_dir = os.path.expanduser("~")
-                svg_files = [f for f in os.listdir(home_dir) if f.endswith('.svg')]
-                if svg_files:
-                    svg_path = os.path.join(home_dir, svg_files[0])
-                    png_path = svg_path.replace('.svg', '.png')
-                    
-                    # Read SVG content and replace CSS variables
-                    with open(svg_path, 'r') as svg_file:
-                        svg_content = svg_file.read()
-                    svg_content = replace_css_variables(svg_content)
-                    with open(svg_path, 'w') as svg_file:
-                        svg_file.write(svg_content)
-                    
-                    # Try to send SVG file
-                    """
-                    try:
-                        with open(svg_path, 'rb') as svg_file:
-                            await update.message.reply_document(InputFile(svg_file))
-                    except Exception as e:
-                        logger.error(f"Error sending SVG file: {e}")
-                        await update.message.reply_text("⚠️ Hubo un problema al enviar tu carta astral en formato SVG.")
-                    """
-                    
-                    # Try to convert and send PNG file
-                    try:
-                        cairosvg.svg2png(url=svg_path, write_to=png_path, scale=4.0)  # Increase resolution by 4 times
-                        with open(png_path, 'rb') as png_file:
-                            await update.message.reply_document(InputFile(png_file))
-                    except Exception as e:
-                        logger.error(f"Error converting or sending PNG file: {e}")
-                        await update.message.reply_text("⚠️ Hubo un problema al convertir o enviar tu carta astral en formato PNG.")
-                    
-                    # Remove both SVG and PNG files
-                    try:
-                        os.remove(svg_path)
-                        os.remove(png_path)
-                    except Exception as e:
-                        logger.error(f"Error removing files: {e}")
-                
-                await update.message.reply_text("🔮 Dame un momento mientras consulto las estrellas y tejo tu predicción...")
-                prediction = get_astrological_prediction(context.user_data["name"], context.user_data["location"], chart)
-                
-                await update.message.reply_text("⭐ Con las estrellas como testigo, aquí está tu predicción:")
-                await asyncio.sleep(2)  # 2-second pause for suspense
-
-                prediction_paragraphs = prediction.split('\n')
-                for paragraph in prediction_paragraphs:
-                    if paragraph.strip():  # Only send non-empty paragraphs
-                        await update.message.reply_text(paragraph)
-                        await asyncio.sleep(5)  # 5-second pause between paragraphs
-
-                log_user_interaction(context)  # Log the user interaction
-                await asyncio.sleep(8)  # 8-second pause before asking if they want to continue
-                await update.message.reply_text(
-                    '🌟 ¡Espero que mis palabras resuenen contigo! ¿Te gustaría seguir preguntando sobre otras almas que deseas conocer más?'
-                )
-                return REPEAT
-            else:
-                error_message = f"Error generating chart for: {context.user_data}"
-                print(error_message)  # Debug print
-                await update.message.reply_text(f"⚠️ Hubo un error al generar tu carta astral. Detalles: {error_message}")
-                return ConversationHandler.END
-        except Exception as e:
-            error_message = f"Exception occurred: {str(e)}\nUser data: {context.user_data}"
-            print(error_message)  # Debug print
-            logger.error(error_message)
-            await update.message.reply_text(f"⚠️ Hubo un error al generar tu carta astral. Detalles: {error_message}")
-            return ConversationHandler.END
+        return await generate_chart_and_prediction(update, context)
     else:
         await update.message.reply_text("🌆 Ese lugar parece demasiado largo, ¿puedes indicar una ciudad principal más cercana?")
         return LOCATION
@@ -396,91 +388,7 @@ async def country_code(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
     country_code = update.message.text.strip().upper()
     if len(country_code) == 2:
         context.user_data["country_code"] = country_code
-        try:
-            chart = create_astrological_chart(
-                context.user_data["name"],
-                context.user_data["year"],
-                context.user_data["month"],
-                context.user_data["day"],
-                context.user_data["hour"],
-                context.user_data["minute"],
-                context.user_data["location"],
-                context.user_data["country_code"]
-            )
-            if chart:
-                await update.message.reply_text(f"🌌 ¡Aquí está tu carta astral, revelada a mis ojos!\n{chart}")
-                
-                # Wait for the SVG file to be created
-                await asyncio.sleep(2)
-                
-                # Find and send the SVG file
-                home_dir = os.path.expanduser("~")
-                svg_files = [f for f in os.listdir(home_dir) if f.endswith('.svg')]
-                if svg_files:
-                    svg_path = os.path.join(home_dir, svg_files[0])
-                    png_path = svg_path.replace('.svg', '.png')
-                    
-                    # Read SVG content and replace CSS variables
-                    with open(svg_path, 'r') as svg_file:
-                        svg_content = svg_file.read()
-                    svg_content = replace_css_variables(svg_content)
-                    with open(svg_path, 'w') as svg_file:
-                        svg_file.write(svg_content)
-                    
-                    # Try to send SVG file
-                    """
-                    try:
-                        with open(svg_path, 'rb') as svg_file:
-                            await update.message.reply_document(InputFile(svg_file))
-                    except Exception as e:
-                        logger.error(f"Error sending SVG file: {e}")
-                        await update.message.reply_text("⚠️ Hubo un problema al enviar tu carta astral en formato SVG.")
-                    """
-                    
-                    try:
-                        cairosvg.svg2png(url=svg_path, write_to=png_path, scale=4.0)  # Increase resolution by 4 times
-                        with open(png_path, 'rb') as png_file:
-                            await update.message.reply_document(InputFile(png_file))
-                    except Exception as e:
-                        logger.error(f"Error converting or sending PNG file: {e}")
-                        await update.message.reply_text("⚠️ Hubo un problema al convertir o enviar tu carta astral en formato PNG.")
-                    
-                    # Remove both SVG and PNG files
-                    try:
-                        os.remove(svg_path)
-                        os.remove(png_path)
-                    except Exception as e:
-                        logger.error(f"Error removing files: {e}")
-                
-                await update.message.reply_text("🔮 Dame un momento mientras consulto las estrellas y tejo tu predicción...")
-                prediction = get_astrological_prediction(context.user_data["name"], context.user_data["location"], chart)
-                
-                await update.message.reply_text("⭐ Con las estrellas como testigo, aquí está tu predicción:")
-                await asyncio.sleep(2)  # 2-second pause for suspense
-
-                prediction_paragraphs = prediction.split('\n')
-                for paragraph in prediction_paragraphs:
-                    if paragraph.strip():  # Only send non-empty paragraphs
-                        await update.message.reply_text(paragraph)
-                        await asyncio.sleep(5)  # 5-second pause between paragraphs
-
-                log_user_interaction(context)  # Log the user interaction
-                await asyncio.sleep(8)  # 8-second pause before asking if they want to continue
-                await update.message.reply_text(
-                    '🌟 ¡Espero que mis palabras resuenen contigo! ¿Te gustaría seguir preguntando sobre otras almas que deseas conocer más?'
-                )
-                return REPEAT
-            else:
-                error_message = f"Error generating chart for: {context.user_data}"
-                print(error_message)  # Debug print
-                await update.message.reply_text(f"⚠️ Hubo un error al generar tu carta astral. Detalles: {error_message}")
-                return ConversationHandler.END
-        except Exception as e:
-            error_message = f"Exception occurred: {str(e)}\nUser data: {context.user_data}"
-            print(error_message)  # Debug print
-            logger.error(error_message)
-            await update.message.reply_text(f"⚠️ Hubo un error al generar tu carta astral. Detalles: {error_message}")
-            return ConversationHandler.END
+        return await generate_chart_and_prediction(update, context)
     else:
         await update.message.reply_text("🌍 Ese código de país no parece válido. Por favor, introduce las dos letras que indican tu país (por ejemplo, ES para España, AR para Argentina).")
         return COUNTRY_CODE

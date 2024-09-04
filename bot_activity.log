@@ -5366,3 +5366,147 @@ Keep in mind that the default username is limited to 2000 requests per hour and 
 2024-09-04 03:57:25,395 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
 2024-09-04 03:57:35,391 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
 2024-09-04 03:57:45,433 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:44:15,501 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getMe "HTTP/1.1 200 OK"
+2024-09-04 11:44:15,539 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/deleteWebhook "HTTP/1.1 200 OK"
+2024-09-04 11:44:15,540 - telegram.ext.Application - INFO - Application started
+2024-09-04 11:44:17,344 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:44:22,319 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:44:25,274 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:44:25,511 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:44:33,436 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:44:33,663 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:44:36,659 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:44:36,821 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:44:37,935 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:44:38,109 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:44:38,981 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:44:39,154 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:44:40,680 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:44:40,856 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:44:45,310 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:44:45,310 - __main__ - INFO - Location received: buenos aires
+2024-09-04 11:44:45,310 - __main__ - INFO - Creando carta astral para asier, 1984-6-16, 22:30, buenos aires, AR
+2024-09-04 11:44:45,310 - root - WARNING - 
+********
+NO GEONAMES USERNAME SET!
+Using the default geonames username is not recommended, please set a custom one!
+You can get one for free here:
+https://www.geonames.org/login
+Keep in mind that the default username is limited to 2000 requests per hour and is shared with everyone else using this library.
+********
+2024-09-04 11:44:45,311 - root - INFO - Fetching timezone/coordinates from geonames
+2024-09-04 11:44:45,960 - root - INFO - SVG Generated Correctly in: C:\Users\asier\asier - Natal Chart.svg
+2024-09-04 11:44:46,213 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:44:49,182 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 11:45:16,377 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:45:16,613 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:45:16,799 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:45:21,973 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:45:25,225 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:45:25,225 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-09-04 11:45:25,298 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7005636792:update_fetcher' coro=<Application._update_fetcher() running at C:\Users\asier\AstroBot\.conda\Lib\site-packages\telegram\ext\_application.py:1258> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2024-09-04 11:49:32,244 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getMe "HTTP/1.1 200 OK"
+2024-09-04 11:49:32,286 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/deleteWebhook "HTTP/1.1 200 OK"
+2024-09-04 11:49:32,287 - telegram.ext.Application - INFO - Application started
+2024-09-04 11:49:35,148 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:49:35,326 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:49:39,487 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:49:39,670 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:49:42,374 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:49:42,548 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:49:44,816 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:49:44,979 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:49:47,930 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:49:48,090 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:49:50,358 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:49:50,535 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:49:53,742 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:49:53,742 - __main__ - INFO - Location received: barakaldo
+2024-09-04 11:49:53,912 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:49:56,654 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:49:56,654 - __main__ - INFO - Creating astrological chart for asier, 1984-6-16, 22:30, barakaldo, ES
+2024-09-04 11:49:56,655 - root - WARNING - 
+********
+NO GEONAMES USERNAME SET!
+Using the default geonames username is not recommended, please set a custom one!
+You can get one for free here:
+https://www.geonames.org/login
+Keep in mind that the default username is limited to 2000 requests per hour and is shared with everyone else using this library.
+********
+2024-09-04 11:49:56,655 - root - INFO - Fetching timezone/coordinates from geonames
+2024-09-04 11:49:56,689 - root - INFO - SVG Generated Correctly in: C:\Users\asier\asier - Natal Chart.svg
+2024-09-04 11:49:56,861 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:50:00,496 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendDocument "HTTP/1.1 200 OK"
+2024-09-04 11:50:00,658 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:50:40,508 - __main__ - INFO - OpenAI API response: {'id': 'chatcmpl-A3gwD8T9W49Ktb7NE3I0ghsWQ0lCG', 'object': 'chat.completion', 'created': 1725443401, 'model': 'gpt-4-0613', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Asier, \u2b50 tu vida parece danzar en un ritmo auspicioso que muchos encontrarían envidiable. Tu presencia en Barakaldo \u26f0\ufe0f le otorga una frescura única y tus amplias experiencias a lo largo de tu vida han labrado una personalidad sin igual.\n\nConsiderándote un Géminis, \u264a tus intereses son múltiples y te encanta disfrutar de diferentes actividades. Aunque a veces pueden parecer contradictorias, siempre hay un hilo conductor en todo lo que te gusta: siempre buscas despejar la mente y estimular el pensamiento. Los juegos de estrategia \U0001f3b2 son algo que te apasiona, para divertirte mientras desafías tu ingenio. También te atrae mucho la lectura \U0001f4da, pues cada libro que terminas es otro universo explorado.\n\nAdemás de esto, tienes una marcada inclinación hacia el arte en todas sus formas. Poseer Mercurio y Venus en Géminis indica tu amor por los ritmos poéticos, las pinturas que transmiten mil sentimientos y las esculturas que desafían la realidad. \U0001f3a8 Museos, galerías y exposiciones son tus santuarios, donde te pierdes entre la belleza inmortal que estas obras presentan.\n\nLas fuertes influencias de Capricornio y Escorpio en tu carta astral muestran que te tomas muy en serio tus responsabilidades laborales. Como Mars retrógado en Escorpio está en tu Décima Casa, la casa del trabajo y la profesión, es posible que estés en un campo que requiera dedicación, estrategia y un fuerte deseo de éxito. \U0001f3c6 Puedes enfrentar obstáculos, pero siempre estás listo para superarlos con tu determinación de hierro.\n\nLas relaciones familiares son muy importantes para ti debido a la presencia de Saturno retrógrado en Escorpio \U0001f982. Posiblemente seas el pilar de tu familia, siempre dispuesto a dar apoyo y a estar allí en tiempos difíciles. Una persona a la que todos recurren en busca de guía y sabiduría. \n\nEn el amor, eres cauteloso pero muy leal. Vienes de un lugar de auténtico cuidado y dedicación. El amor, para ti, no es algo que se les da a los demás a la ligera. Consideras a tu pareja más como un compañero de vida más que solo una persona a la que amas. La presencia de la Luna en Acuario en tu Primera Casa podría significar que buscas a alguien que puede mantenerse al día con tus rápidos cambios de ideas y tu espíritu aventurero. Debes ser capaz de volar junto con ellos, pero también tener tus propios vuelos en solitario. \U0001f498\n\nAsier, tu mundo es una brillante sinfonía de sueños, posibilidades y perseverancia. Géminis, Escorpio, Capricornio, no son solo signos del zodiaco; son las piezas que componen el rompecabezas que es tu ser. Sigue conquistando tu camino con las estrellas como guía. \U0001f31f\u2728', 'refusal': None}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 883, 'completion_tokens': 717, 'total_tokens': 1600}, 'system_fingerprint': None}
+2024-09-04 11:50:40,510 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:50:40,742 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:50:42,923 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:50:48,092 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:50:50,550 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:50:53,347 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:50:58,507 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:51:00,594 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:51:03,678 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:51:08,938 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:51:10,628 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:51:14,201 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:51:20,678 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:51:27,489 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/sendMessage "HTTP/1.1 200 OK"
+2024-09-04 11:51:30,715 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:51:40,758 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:51:50,813 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:52:00,855 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:52:10,888 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:52:20,920 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:52:30,959 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:52:40,994 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:52:51,065 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:53:01,122 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:53:11,158 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:53:21,198 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:53:31,243 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:53:41,278 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:53:51,344 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:54:01,407 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:54:11,471 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:54:21,513 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:54:31,552 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:54:41,585 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:54:51,623 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:55:01,662 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:55:11,700 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:55:21,742 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:55:31,791 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:55:41,827 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:55:51,860 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:56:01,919 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:56:11,963 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:56:21,997 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:56:32,040 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:56:42,077 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:56:52,119 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:57:02,152 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:57:12,190 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:57:22,235 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:57:32,275 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:57:42,316 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:57:52,352 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:58:02,447 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:58:12,488 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:58:22,524 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:58:32,564 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:58:42,601 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:58:52,641 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:59:02,680 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:59:12,734 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:59:22,772 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:59:32,823 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:59:42,859 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 11:59:52,900 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 12:00:02,949 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 12:00:12,996 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 12:00:23,041 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 12:00:33,086 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
+2024-09-04 12:00:43,129 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7005636792:AAFsRSBKvxA67FoQao1f7AdjPxYKvwk9cvY/getUpdates "HTTP/1.1 200 OK"
