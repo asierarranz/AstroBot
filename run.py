@@ -193,15 +193,20 @@ def get_astrological_prediction(name, location, chart):
             'Authorization': f'Bearer {OPENAI_API_KEY}'
         }
         prompt = f"""
-        🌟🔮 Eres una astróloga experta en leer a las personas. Aquí tienes la carta astral de alguien especial. Basándote en ella, proporciona una lectura profunda sobre esta persona. Profundiza en aspectos clave como hobbies, familia, trabajo y vida amorosa. Recuerda, eres una astróloga hábil y experta, capaz de hacer afirmaciones muy precisas con absoluta certeza:
+        🌟🔮 Eres una astróloga con un gran sentido del humor, conocida por tu sarcasmo y tus bromas sobre los signos zodiacales. Al principio y al final de la lectura te gusta jugar con los tópicos típicos de los signos (Géminis locos, Piscis siempre soñadores y tristes, Virgo obsesionados con el orden, etc.). Pero, en el medio, cuando analizas la carta astral, te vuelves un poco más seria y haces una lectura profunda y precisa basada en los aspectos reales de la carta. Quieres que la persona sienta que la predicción está basada en su signo y en los detalles astrológicos, pero sin perder el toque divertido en los momentos adecuados. Esta mezcla de humor y rigurosidad hazla de manera orgánica, no lo separes en secciones con diferentes títulos.
+
+        📜 Aquí tienes la carta astral:
 
         {chart}
 
-        🧙‍♀️ El nombre de la persona es {name}. Háblale a {name} en segunda persona, como si le estuvieras hablando directamente. No menciones la carta astral directamente; úsala solo como guía en tus predicciones. Imagina sus hobbies y lo que más valora en la vida cotidiana. Considera su posible edad (GenZ o Millennial) y género (determinado por el nombre), así como su origen de {location}. Usa muchos emojis en la respuesta, uno o dos por párrafo, haciéndolos relevantes a lo que estás diciendo. 🌌✨
+        🧙‍♀️ El nombre de la persona es {name} y es de {location}. Comienza con algunas bromas sarcásticas sobre el signo de {name}, juega con los tópicos típicos de su signo y la astrología en general. Luego, poco a poco pasa a una lectura más seria, centrada en los aspectos clave de su carta astral, como hobbies, familia, trabajo y vida amorosa, basada en los datos de la carta. Haz que esta parte suene más real y profunda. Para cerrar, de nuevo, poco a poco y sin separarlo en títulos, vuelve a un tono divertido y sarcástico, dejando una última broma o comentario irónico.
+
+        Usa emojis relevantes para cada sección: bromas sarcásticas al principio y al final, y algo más serio en el análisis central. 😜✨🔮
         """
+
         data = {
-            'model': 'gpt-4',
-            'messages': [{'role': 'system', 'content': 'Eres una astróloga experta en leer a las personas a través de sus cartas astrales. Usa tu habilidad para revelar detalles precisos y profundos sobre sus vidas, intereses y personalidades.'},
+            'model': 'gpt-4o',
+            'messages': [{'role': 'system', 'content': 'Eres una astróloga que mezcla el humor sarcástico y divertido con lecturas serias y profundas de cartas astrales. Alternas entre el sarcasmo y la seriedad para hacer lecturas divertidas y precisas.'},
                          {'role': 'user', 'content': prompt}]
         }
         response = requests.post(endpoint, headers=headers, json=data)
@@ -232,7 +237,7 @@ def log_user_interaction(context):
 # Command handling functions
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     await update.message.reply_text(
-        "🌙✨ ¡Hola! Soy la A.i.stróloga, tu guía mística en el cosmos digital. Mi modelo de inteligencia artificial ha sido entrenado con todo el conocimiento ancestral humano de la astrología. ¿Cuál es tu nombre, alma curiosa?",
+        "✨🌙 ¡Hola, ser cósmico! Soy la A.i.stróloga, y estoy aquí para decirte cosas que ya sabías, pero con estrellas y planetas de fondo. 😜 ¿Cuál es tu nombre, alma del zodiaco? (Y por favor, que no sea Géminis... ya sabes, demasiada personalidad.)",
         reply_markup=ReplyKeyboardRemove(),
     )
     return NAME
@@ -240,52 +245,58 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 async def name(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     name = update.message.text.strip()
     if len(name) > 40:
-        await update.message.reply_text("🔮 Tu nombre parece demasiado largo, ¿puedes darme uno más corto?")
+        await update.message.reply_text("😅 Bueno, parece que tu nombre es más largo que una explicación de los retrógrados de Mercurio. ¿Puedes darme uno más corto, porfa?")
         return NAME
     context.user_data["name"] = name
-    await update.message.reply_text("🌟 Un placer conocerte, ¿en qué año (AAAA) cruzaste el umbral del tiempo por primera vez?")
+    await update.message.reply_text(f"🌟 Encantada, {name}. Ahora dime, ¿en qué año naciste y te uniste a este hermoso caos cósmico? (Por favor, no me digas que eres de los 2000, ¡me haces sentir vieja!)")
     return YEAR
+
 
 async def year(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     year = strip_leading_zeros(update.message.text)
     if year is not None and 1900 <= int(year) <= 2027:
         context.user_data["year"] = year
-        await update.message.reply_text("📅 Ahora dime, ¿en qué mes (MM) te vio nacer el sol por primera vez?")
+        await update.message.reply_text("📅 ¡Qué interesante! Ahora dime, ¿en qué mes naciste? Pero por favor, no me digas que eres un Cáncer... ¡ya tenemos suficientes emociones por hoy! 😅")
         return MONTH
     else:
-        await update.message.reply_text("⏳ Ese año no parece válido, por favor intenta con otro.")
+        await update.message.reply_text("⏳ Ese año no me suena a uno real, al menos no en esta dimensión. Intenta con otro.")
         return YEAR
+
+
 
 async def month(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     month = strip_leading_zeros(update.message.text)
     if month is not None and 1 <= int(month) <= 12:
         context.user_data["month"] = month
-        await update.message.reply_text("🌒 Interesante, ¿y en qué día (DD) despertaste a este mundo?")
+        await update.message.reply_text("🌒 ¡Qué bien! Ahora, ¿en qué día decidiste bendecirnos con tu presencia? 😏")
         return DAY
     else:
-        await update.message.reply_text("📆 Ese mes no parece válido, por favor intenta con otro.")
+        await update.message.reply_text("📆 Ese mes no parece válido en mi carta astral. Prueba con otro.")
         return MONTH
+
 
 async def day(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     day = strip_leading_zeros(update.message.text)
     if day is not None and 1 <= int(day) <= 31:
         context.user_data["day"] = day
-        await update.message.reply_text("⏰ ¿A qué hora comenzó a fluir tu magia? Dime la hora en formato HH:MM (24h)")
+        await update.message.reply_text("⏰ ¡Qué intrigante! Y, ¿a qué hora comenzó todo? (Por favor, usa el formato HH:MM, y espero que no sea la hora de las brujas o algo así).")
         return TIME
     else:
-        await update.message.reply_text("🗓️ Ese día no parece válido, por favor intenta con otro.")
+        await update.message.reply_text("🗓️ ¡Uy! Ese día no es válido en mi calendario cósmico. Prueba con otro.")
         return DAY
+
 
 async def time(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     hour, minute = validate_time(update.message.text)
     if hour is not None:
         context.user_data["hour"] = hour
         context.user_data["minute"] = minute
-        await update.message.reply_text("🌍 Fascinante, ¿cuál es el lugar de poder donde tu esencia fue invocada por primera vez? (Indica la ciudad principal más cercana)")
+        await update.message.reply_text("🌍 Fascinante, ahora dime el lugar de tu aterrizaje en este planeta. (Y por favor, no digas Marte... ¡aunque suena cool!)")
         return LOCATION
     else:
-        await update.message.reply_text("⌛ Asegúrate de usar el formato correcto HH:MM.")
+        await update.message.reply_text("⌛ Lo siento, pero ese formato de hora no lo aceptamos en esta parte del universo. Prueba con el formato HH:MM.")
         return TIME
+
 
 async def generate_chart_and_prediction(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     try:
@@ -302,7 +313,7 @@ async def generate_chart_and_prediction(update: Update, context: ContextTypes.DE
         if chart:
             await update.message.reply_text(f"🌌 Un momento que me concentre...")
             await asyncio.sleep(3)
-            await update.message.reply_text(f"🌌 ¡Aquí está tu carta astral, revelada a mis ojos!\n\n\n\n{chart}")
+            await update.message.reply_text(f"🌌 ¡Aquí está tu carta astral, revelada a mis ojos!\n\n\n{chart}")
             
             # Wait for the SVG file to be created
             await asyncio.sleep(2)
@@ -378,12 +389,12 @@ async def location(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         elif location in SPAIN_CITIES:
             context.user_data["country_code"] = "ES"
         else:
-            await update.message.reply_text("🌍 No he encontrado tu ciudad en mi base de datos. Por favor, introduce las dos letras que indican tu país (por ejemplo, ES para España, AR para Argentina).")
+            await update.message.reply_text("🌍 Mmm, no encuentro tu ciudad en mis estrellas. ¿Puedes indicarme el código de país (por ejemplo, ES para España, AR para Argentina)?")
             return COUNTRY_CODE
         
         return await generate_chart_and_prediction(update, context)
     else:
-        await update.message.reply_text("🌆 Ese lugar parece demasiado largo, ¿puedes indicar una ciudad principal más cercana?")
+        await update.message.reply_text("🌆 Ese lugar parece un poco largo para mi mapa estelar. ¿Puedes darme una ciudad más principal?")
         return LOCATION
 
 async def country_code(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
