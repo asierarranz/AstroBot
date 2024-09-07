@@ -2,3 +2,7 @@
 bot_activity.log
 cache/kerykeion_geonames_cache.sqlite
 users.txt
+tokens.txt
+*.txt
+*.log
+*.sqlite
