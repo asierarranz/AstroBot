@@ -237,7 +237,7 @@ def log_user_interaction(context):
 # Command handling functions
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     await update.message.reply_text(
-        "✨🌙 ¡Hola, ser cósmico! Soy la A.i.stróloga, y estoy aquí para decirte cosas que ya sabías, pero con estrellas y planetas de fondo. 😜 ¿Cuál es tu nombre, alma del zodiaco? (Y por favor, que no sea Géminis... ya sabes, demasiada personalidad.)",
+        "✨🌙 ¡Hola, ser cósmico! Soy la A.I.stróloga, y estoy aquí para decirte cosas que ya sabías, pero con estrellas y planetas de fondo. 😜 ¿Cuál es tu nombre?",
         reply_markup=ReplyKeyboardRemove(),
     )
     return NAME
@@ -256,10 +256,10 @@ async def year(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     year = strip_leading_zeros(update.message.text)
     if year is not None and 1900 <= int(year) <= 2027:
         context.user_data["year"] = year
-        await update.message.reply_text("📅 ¡Qué interesante! Ahora dime, ¿en qué mes naciste? Pero por favor, no me digas que eres un Cáncer... ¡ya tenemos suficientes emociones por hoy! 😅")
+        await update.message.reply_text("📅 ¡Qué interesante! Ahora dime, ¿en qué mes naciste? Pero por favor, no me digas que eres un Cáncer... ¡ya tenemos suficientes emociones por hoy! 😅 [Dame el número del mes del 1 al 12]")
         return MONTH
     else:
-        await update.message.reply_text("⏳ Ese año no me suena a uno real, al menos no en esta dimensión. Intenta con otro.")
+        await update.message.reply_text("⏳ Ese año no me suena a uno real, al menos no en esta dimensión. Intenta con otro. Formato AAAA (Ejemplo: 1984)")
         return YEAR
 
 
@@ -279,7 +279,7 @@ async def day(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     day = strip_leading_zeros(update.message.text)
     if day is not None and 1 <= int(day) <= 31:
         context.user_data["day"] = day
-        await update.message.reply_text("⏰ ¡Qué intrigante! Y, ¿a qué hora comenzó todo? (Por favor, usa el formato HH:MM, y espero que no sea la hora de las brujas o algo así).")
+        await update.message.reply_text("⏰ ¡Qué intrigante! Y, ¿a qué hora comenzó todo? (Por favor, usa el formato HH:MM, en formato 24h, y espero que no sea la hora de las brujas o algo así). [Ejemplo: 18:35]")
         return TIME
     else:
         await update.message.reply_text("🗓️ ¡Uy! Ese día no es válido en mi calendario cósmico. Prueba con otro.")
@@ -291,7 +291,7 @@ async def time(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     if hour is not None:
         context.user_data["hour"] = hour
         context.user_data["minute"] = minute
-        await update.message.reply_text("🌍 Fascinante, ahora dime el lugar de tu aterrizaje en este planeta. (Y por favor, no digas Marte... ¡aunque suena cool!)")
+        await update.message.reply_text("🌍 Fascinante, ahora dime el lugar de tu aterrizaje en este planeta. (Introduce la ciudad grande más cercana donde naciste!)")
         return LOCATION
     else:
         await update.message.reply_text("⌛ Lo siento, pero ese formato de hora no lo aceptamos en esta parte del universo. Prueba con el formato HH:MM.")
